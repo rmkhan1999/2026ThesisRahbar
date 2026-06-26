@@ -1,0 +1,105 @@
+% Project plan template for Fintech MSc. John Cartlidge, 2023.
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{appendix}
+
+\title{DRAFT TITLE OF THESIS HERE}
+\author{Rahbar Mahmood Khan \\ 
+        Supervised by: Dr. Conor Houghton}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A paragraph or two that briefly outlines the motivation of your work, what you will do, and a "fairy tale" outcome of what you hope to find. 
+
+\vspace{75mm} 
+
+ABSTRACT SHOULD BE AROUND HALF A PAGE OR MORE
+\end{abstract}
+
+\textbf{Ethics statement: } This project
+%Choose one of the following options:
+does not require ethics approval, as reviewed by my supervisor Dr. Conor Houghton.
+%or
+%fits within the scope of the blanket ethics application, as reviewed by my supervisor $<$SUPERVISOR NAME$>$.
+%or
+%will require ethics approval because $<$REASON WHY NOT INCLUDED IN BLANKET APPLICATION$>$, as approved by my supervisor $<$SUPERVISOR NAME$>$. An ethics application will be made through OREMS.
+
+%Enter your ethics test score. You must pass this test to confirm you understand the ethics rules 
+I have completed the ethics test on Blackboard. My score is 12/12.
+
+\newpage % END THE TITLE PAGE
+
+\section{Project Plan}
+
+\subsection{Motivation}
+Parameter inference in dynamical systems is a central challenge across the quantitative sciences. These systems are often described by differential equations, and their parameters usually have meaningful interpretations, such as rates, thresholds, or interaction strengths. Observations are often noisy, which makes inference difficult. Point estimation methods estimate a single parameter which may overlook weak identifiability. However, bayesian inference produces a posterior distribution over the parameters, which allows uncertainty to be quantified and reveals if the data which is provided has limited information about particular components of the model.
+
+Gradient based methods such as Hamiltonian Monte Carlo and its variant the No-U-Turn Sampler can make posterior sampling more efficient by using information about the shape of the posterior distribution given that it has a sufficiently smooth posterior geometry. This project evaluates the ability of these gradient based methods to recover parameters in dynamical systems and develop diagnostic criteria for identifying cases where such recovery is unreliable.
+
+To study this problem, this project uses the two-process model of sleep regulation as a methodological testbed. In this model, homeostatic sleep pressure builds up during wakefulness and dissipates during sleep. Transitions between sleep and wake occur when this pressure crosses upper or lower thresholds modulated by the circadian rhythm. The model contains a small number of biologically meaningful parameters, such as homeostatic time constants,threshold values, and circadian parameters. 
+
+The model is well suited for a methodological study because it is computationally inexpensive to simulate, but it also creates real inference challenges, such as threshold switching and non-identifiability. The model can also be used on real data, because sleep and wake timing can be estimated using wrist actigraphy, without being invasive. This is important in Parkinson's disease, where sleep and circadian rhythms are often disrupted.
+
+\subsection{Research problem}
+
+
+\newpage
+
+Second page of project plan
+
+\newpage
+
+
+% REFERENCES HERE
+% A list of all the literature sources cited in your literature survey, consistently formatted in a commonly-used style (such as APA or IEEE), and with each item in the References being complete, i.e. as you would format it in your final submitted thesis, with author names, publication year, publication venue (conference or journal name), page numbers, DOI, etc.
+% References do not count towards your total page count 
+% While it will vary between projects, we would expect your references to cover more than one page. If you have been reading around the subject, even at this early stage, we would expect more than 10 references. Possibly a lot more.
+\bibliographystyle{IEEEtran} %here we have selected ot use IEEE style references
+\bibliography{refs} %point to my file of references
+
+\newpage
+
+% BEGIN APPENDIX
+\appendix
+\section{Project Timeline}
+
+A one-page time-plan for your project, which you may choose to format as a week-by-week bullet-list, or possibly as a Gantt Chart. Maximum one page.
+
+E.g.,:
+\begin{itemize}
+    \item Week 1: I will do...
+    \item Week 2: I will do...
+\end{itemize}
+
+AND/OR
+
+Include Gantt chart to visually show what you will do.
+
+
+\newpage
+
+\section{Risk Assessment}
+
+A one-page risk assessment for your project, talking about the major risks you can foresee that might plausibly occur and interfere with your plans. For each risk, state clearly what it is, what its likelihood is, what its effects/impact would be on the project, and what your intended mitigation or risk-reduction involves. 
+
+Table~\ref{tab:my_label} shows a simple example. There are other ways that you can present this information in tabular form.
+
+\begin{table}[h]
+    \centering
+    \caption{Risks and Mitigations}
+    \label{tab:my_label}
+    \begin{tabular}{|p{3cm}|c|c|p{3cm}|}
+        \hline
+         Risk & Likelihood & Severity & Mitigation \\ \hline
+         Computer problem (stolen or broken) & Medium & High & Backup all work using the cloud.\\ \hline
+         Risk 2 & ... & ... & ...\\ \hline
+    \end{tabular}
+\end{table}
+
+Note that all tables and figures in your document (and in your final thesis) require a number and a caption. In the main text you must refere to every table and figure by number and name. Tables have caption ABOVE the table. Figures have caption BELOW the figure. 
+
+\end{document}
+
+
