@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-28",
+  "effective_config_sha256": "3917c2e98332599af98aa75ee1d8136c8162225bcef5dfca6b4b100c776932f2",
+  "git": {
+    "commit": "32c70d8",
+    "working_tree_dirty": true
+  },
+  "outcome": "abandoned",
+  "run_id": "RUN-002",
+  "sampler": {
+    "burn_in_hours": 120.0,
+    "chain_method": "sequential",
+    "chains": 1,
+    "design": "entrained",
+    "draws": 50,
+    "init_strategy": "init_to_median",
+    "max_tree_depth": 10,
+    "retained_hours": 72.0,
+    "target_accept_prob": 0.8,
+    "thread_stack_bytes": 268435456,
+    "warmup": 50
+  },
+  "seed": 0,
+  "source_snapshot_sha256": "3891348561620585cbfc39854347cbf1a59f19308a6bf6ca8d022d2519058ae5",
+  "termination": {
+    "reason": "No sampler phase completed after 2127.804 seconds; process remained CPU-bound while evaluating a proposal that reached the ODE step budget.",
+    "signal": "SIGTERM"
+  },
+  "timings": {
+    "wall_seconds_before_abandonment": 2127.804
+  },
+  "diagnostics": null
+}

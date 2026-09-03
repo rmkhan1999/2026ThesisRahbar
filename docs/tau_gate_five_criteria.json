@@ -1,0 +1,63 @@
+{
+  "criteria": {
+    "cosine_min": 0.9999,
+    "taylor_abs_ratio_minus_one_max": 0.05,
+    "norm_relative_error_max": 0.001,
+    "taylor_steps": [
+      0.0001,
+      1e-05,
+      1e-06
+    ]
+  },
+  "note": "Gradient pass requires cosine>=0.9999, |Taylor ratio-1|<=0.05, norm rel<=1e-3 at all five draws.",
+  "tau_gate_table": [
+    {
+      "tau_gate": 0.05,
+      "forced_transition_mae_hours": 0.2636957311141964,
+      "epoch_label_agreement": 0.9896049896049897,
+      "ic_pass": true,
+      "ic_max_delta_hours": 0.0010003172569650332,
+      "gate_range": [
+        -0.07205420241715381,
+        1.0448399690216232
+      ],
+      "fraction_gate_escape": 0.012,
+      "min_cosine": -0.5528327971537456,
+      "max_best_abs_taylor_ratio_minus_one": 0.8408189155573426,
+      "max_norm_relative_error": 5466445.32864172,
+      "gradient_all_pass": false
+    },
+    {
+      "tau_gate": 0.2,
+      "forced_transition_mae_hours": 0.13310901870535352,
+      "epoch_label_agreement": 0.9812889812889813,
+      "ic_pass": false,
+      "ic_max_delta_hours": 0.07773490405348227,
+      "gate_range": [
+        2.2057761666768653e-45,
+        0.9999999999999984
+      ],
+      "fraction_gate_escape": 0.0,
+      "min_cosine": 0.9830391787710803,
+      "max_best_abs_taylor_ratio_minus_one": 0.9912867310559589,
+      "max_norm_relative_error": 0.46162967078590245,
+      "gradient_all_pass": false
+    },
+    {
+      "tau_gate": 0.5,
+      "forced_transition_mae_hours": 0.560851707032427,
+      "epoch_label_agreement": 0.9459459459459459,
+      "ic_pass": false,
+      "ic_max_delta_hours": 0.09922411263641173,
+      "gate_range": [
+        1.4677010042740845e-23,
+        0.9999999999999819
+      ],
+      "fraction_gate_escape": 0.0,
+      "min_cosine": 0.9999738194577998,
+      "max_best_abs_taylor_ratio_minus_one": 0.16452193610197974,
+      "max_norm_relative_error": 0.017484633474461216,
+      "gradient_all_pass": false
+    }
+  ]
+}

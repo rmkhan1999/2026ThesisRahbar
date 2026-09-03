@@ -1,0 +1,36 @@
+{
+  "run_id": "RUN-014",
+  "n_epochs": 49,
+  "seed": 0,
+  "design": "entrained",
+  "retained_hours": 24,
+  "burn_in_hours": 48,
+  "log_likelihood_mean_by_chain": [
+    -1.7762697293333114,
+    -1.9731308481194647,
+    -1.213367960292787,
+    -1.2862058063418693
+  ],
+  "log_likelihood_median_by_chain": [
+    -1.2597101512391005,
+    -1.383749128118294,
+    -0.994444412693902,
+    -1.0622132563309008
+  ],
+  "log_likelihood_sd_by_chain": [
+    1.4955537560499377,
+    1.5853851648679178,
+    0.6535021363647531,
+    0.8524364861816102
+  ],
+  "chain1_root_success_n": 68,
+  "chain1_root_fail_n": 32,
+  "chain1_root_success_mean": -1.400091938170449,
+  "chain1_root_fail_mean": -2.5756475355543933,
+  "chains_2_4_mean": -1.4909015382513735,
+  "delta_mean_nats_chain1_minus_234": -0.2853681910819379,
+  "delta_median_nats_chain1_minus_234": -0.1749,
+  "chains_2_4_ll_percentile_5_95": [-3.3896, -0.6279],
+  "chain1_fraction_inside_234_5_95": 0.86,
+  "reading": "Chain 1 observation likelihood matches chains 2-4 (and beats chain 2 on the mean). Alternative 1:1-off regime is a genuine likelihood mode, not a lost chain."
+}

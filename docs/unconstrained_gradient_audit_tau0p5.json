@@ -1,0 +1,262 @@
+{
+  "retained_hours": 48.0,
+  "burn_in_hours": 72.0,
+  "fixed_misclassification": 0.01,
+  "fixed_step_size": 0.01,
+  "tau_gate": 0.5,
+  "k": 650.0,
+  "dt_over_tau_gate": 0.02,
+  "adjoint_mode": "direct",
+  "ad_fd": [
+    {
+      "draw": 0,
+      "seed": 1000,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        9.305842676128098,
+        73.48538816291675,
+        -86.42416909502599,
+        3.284424771343454,
+        6.0321364417384515,
+        2.1459051905668973
+      ],
+      "finite_difference": [
+        9.305098942036238,
+        73.48520463779096,
+        -86.41880941127056,
+        3.284425994820594,
+        6.032137136458004,
+        2.145905850170493
+      ],
+      "relative_error": [
+        7.992758556272661e-05,
+        2.4974432158984667e-06,
+        6.201987497794088e-05,
+        3.7250866421521187e-07,
+        1.151697211770952e-07,
+        3.0737769585301347e-07
+      ],
+      "max_relative_error": 7.992758556272661e-05,
+      "min_g": 3.4379896977673617e-16,
+      "max_g": 0.9999999999846898,
+      "gate_escape": false
+    },
+    {
+      "draw": 1,
+      "seed": 1001,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        -119.86723720722574,
+        9.42165544188737,
+        222.71768943245678,
+        27.90124065953364,
+        -18.671439326451356,
+        -4.480207483616567
+      ],
+      "finite_difference": [
+        -119.87635426038422,
+        9.42402448842472,
+        222.76717425739886,
+        27.90155994674137,
+        -18.671617692689324,
+        -4.480214146695971
+      ],
+      "relative_error": [
+        7.605380739785713e-05,
+        0.0002513837416551341,
+        0.00022213696926866907,
+        1.1443346118875492e-05,
+        9.552800453803285e-06,
+        1.4872234195977042e-06
+      ],
+      "max_relative_error": 0.0002513837416551341,
+      "min_g": 1.8129531525529938e-17,
+      "max_g": 0.9999999824604007,
+      "gate_escape": false
+    },
+    {
+      "draw": 2,
+      "seed": 1002,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        117.26095273771554,
+        -672.9460720269095,
+        -927.2572748298559,
+        -453.96296298847324,
+        72.44053462755298,
+        2.7810469322750535
+      ],
+      "finite_difference": [
+        117.1791692655688,
+        -665.2273457930846,
+        -905.6661066196624,
+        -451.2313033742998,
+        72.44024702117713,
+        2.7810468566258346
+      ],
+      "relative_error": [
+        0.0006979352444579068,
+        0.011603140313816509,
+        0.02384009741822077,
+        0.00605379013766587,
+        3.970256696738732e-06,
+        2.7201705972305354e-08
+      ],
+      "max_relative_error": 0.02384009741822077,
+      "min_g": 1.0389766163908234e-13,
+      "max_g": 0.9999999831691344,
+      "gate_escape": false
+    },
+    {
+      "draw": 3,
+      "seed": 1003,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        272.72138845011096,
+        -73.55026635560905,
+        -351.5741176079895,
+        -48.89064850005197,
+        1.4594902461542696,
+        -95.25738448994376
+      ],
+      "finite_difference": [
+        272.72480051436787,
+        -73.54942223116723,
+        -351.59085452534094,
+        -48.8906594199534,
+        1.4594903035458626,
+        -95.25739069573545
+      ],
+      "relative_error": [
+        1.2511015684936495e-05,
+        1.1476969039584932e-05,
+        4.7603392227198696e-05,
+        2.2335353141484955e-07,
+        3.932303825115852e-08,
+        6.514761371014497e-08
+      ],
+      "max_relative_error": 4.7603392227198696e-05,
+      "min_g": 3.8686282478203025e-17,
+      "max_g": 0.9999999999969508,
+      "gate_escape": false
+    },
+    {
+      "draw": 4,
+      "seed": 1004,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        -68.86586792092044,
+        65.95614491045717,
+        96.6870567320073,
+        14.47150647613007,
+        3.3818096121365886,
+        -44.61230795059413
+      ],
+      "finite_difference": [
+        -68.86570568980233,
+        65.9563249470807,
+        96.68533906364017,
+        14.471506644042618,
+        3.381809614211306,
+        -44.612303122448786
+      ],
+      "relative_error": [
+        2.3557606283978063e-06,
+        2.729633946060402e-06,
+        1.776555146592141e-05,
+        1.1602976248163521e-08,
+        6.134932250890338e-10,
+        1.0822452563884042e-07
+      ],
+      "max_relative_error": 1.776555146592141e-05,
+      "min_g": 3.560391120441476e-14,
+      "max_g": 0.999999983272974,
+      "gate_escape": false
+    }
+  ],
+  "directional": [
+    {
+      "draw": 0,
+      "grad_norm_sq": 13007.617010350303,
+      "h": 1e-05,
+      "predicted_delta_potential": -0.13007617010350303,
+      "observed_delta_potential": -0.12788296031521895,
+      "relative_discrepancy": 0.01686096528317921,
+      "descent_has_correct_sign": true
+    },
+    {
+      "draw": 1,
+      "grad_norm_sq": 65207.265469050064,
+      "h": 1e-05,
+      "predicted_delta_potential": -0.6520726546905007,
+      "observed_delta_potential": -0.5654050958871153,
+      "relative_discrepancy": 0.13291089295029743,
+      "descent_has_correct_sign": true
+    },
+    {
+      "draw": 2,
+      "grad_norm_sq": 1537750.3376627332,
+      "h": 1e-05,
+      "predicted_delta_potential": -15.377503376627333,
+      "observed_delta_potential": 12.344052924642426,
+      "relative_discrepancy": 1.8027345286364542,
+      "descent_has_correct_sign": false
+    },
+    {
+      "draw": 3,
+      "grad_norm_sq": 214857.35249337298,
+      "h": 1e-05,
+      "predicted_delta_potential": -2.14857352493373,
+      "observed_delta_potential": -2.1890414786361703,
+      "relative_discrepancy": 0.018834800500340497,
+      "descent_has_correct_sign": true
+    },
+    {
+      "draw": 4,
+      "grad_norm_sq": 20652.22691206934,
+      "h": 1e-05,
+      "predicted_delta_potential": -0.20652226912069344,
+      "observed_delta_potential": -0.1971843975547074,
+      "relative_discrepancy": 0.04521484102292571,
+      "descent_has_correct_sign": true
+    }
+  ],
+  "max_relative_error_across_draws": 0.02384009741822077,
+  "any_directional_sign_failure": true,
+  "gate_escape_draws": []
+}

@@ -1,0 +1,45 @@
+{
+  "abandon_reason": "Killed at warmup iteration 20 per cost gate. epsilon=3.81e-5, mean_tree_depth(11-20)=6.90, seconds_per_iteration=156.6 (depth-7 mean 165.3). 500 iters ~21.7 h. Relaunch at 24 h retained.",
+  "date": "2026-08-02",
+  "effective_config_sha256": "258a4fe0e0c45710f2d08334e130743fa58ac8f149c1f78102083a008de26f91",
+  "git": {
+    "commit": "32c70d8",
+    "working_tree_dirty": true
+  },
+  "outcome": "abandoned",
+  "run_id": "RUN-011",
+  "sampler": {
+    "burn_in_hours": 48.0,
+    "chain_method": "sequential",
+    "chains": 1,
+    "dense_mass": true,
+    "design": "entrained",
+    "draws": 200,
+    "fixed_misclassification": 0.01,
+    "fixed_step_size": 0.003,
+    "init_strategy": "init_to_median",
+    "k": 650.0,
+    "max_tree_depth": 7,
+    "p0": 0.5,
+    "retained_hours": 48.0,
+    "sampled_parameters": [
+      "phase_z1",
+      "phase_z2",
+      "excursion_fraction",
+      "amplitude_fraction",
+      "chi_sleep",
+      "chi_wake"
+    ],
+    "target_accept_prob": 0.8,
+    "tau_gate": 0.15,
+    "thread_stack_bytes": 268435456,
+    "warmup": 300
+  },
+  "seed": 0,
+  "source_snapshot_sha256": "06d00bccc4a2d7c2091217474daae0dfb45be8676341f0318c3da09e8cb9286c",
+  "stopped_at": {
+    "csv_rows": 20,
+    "iteration": 20,
+    "phase": "warmup"
+  }
+}

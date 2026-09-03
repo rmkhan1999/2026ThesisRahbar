@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-29",
+  "effective_config_sha256": "18464e6e554992e723ac6851d83dace4e680984df1a43e1330616c7c3d237a3f",
+  "git": {
+    "commit": "32c70d8",
+    "working_tree_dirty": true
+  },
+  "outcome": "running",
+  "run_id": "RUN-006",
+  "sampler": {
+    "burn_in_hours": 72.0,
+    "chain_method": "sequential",
+    "chains": 1,
+    "dense_mass": false,
+    "design": "entrained",
+    "draws": 0,
+    "fixed_misclassification": 0.01,
+    "init_strategy": "init_to_median",
+    "max_tree_depth": 10,
+    "retained_hours": 48.0,
+    "sampled_parameters": [
+      "phase_z1",
+      "phase_z2",
+      "excursion_fraction",
+      "amplitude_fraction",
+      "chi_sleep",
+      "chi_wake"
+    ],
+    "target_accept_prob": 0.8,
+    "thread_stack_bytes": 268435456,
+    "warmup": 150
+  },
+  "seed": 0,
+  "source_snapshot_sha256": "e36ac1de2a90671068849cbf7c821526784e838280c29aa5b108fcd04a9af6f2"
+}

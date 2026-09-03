@@ -1,0 +1,28 @@
+{
+  "fixed_parameter": "threshold_gap",
+  "fixed_value": 0.25,
+  "grid_index": 0,
+  "seed": "continuation",
+  "negative_log_likelihood": 0.09273733221800763,
+  "log_likelihood": -0.09273733221800763,
+  "delta_nll_from_mle": -0.004915019798738721,
+  "success": true,
+  "nfev": 627,
+  "hit_solver_bound": false,
+  "reporting": {
+    "phase": 7.886060141527597,
+    "chi_sleep": 5.267676905449314,
+    "chi_wake": 31.423647680451783,
+    "amplitude": 0.28719243894414614,
+    "threshold_gap": 0.24999999999999994,
+    "misclassification": 2.678360389685776e-05,
+    "excursion_fraction": 0.9814105689146337,
+    "amplitude_fraction": 0.6967435882128395,
+    "total_excursion": 0.41219243894414614
+  },
+  "t_on": 15.0422789355355,
+  "t_off": 23.045071531204933,
+  "tau": 16.99378245187267,
+  "transition_converged": true,
+  "transition_reason": null
+}

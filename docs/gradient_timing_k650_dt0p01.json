@@ -1,0 +1,30 @@
+{
+  "k": 650.0,
+  "dt": 0.01,
+  "timings": [
+    {
+      "label": "smoke_72h",
+      "retained_hours": 72.0,
+      "total_hours": 192.0,
+      "compile_seconds": 3.432292708195746,
+      "median_seconds": 0.9662044583819807,
+      "mean_seconds": 0.9688899501226842,
+      "min_seconds": 0.9567004172131419,
+      "max_seconds": 0.9844828341156244,
+      "projected_hours_4x1000_tree10": 1098.252401027518,
+      "projected_hours_1x100_tree10": 27.45631002568795
+    },
+    {
+      "label": "full_240h",
+      "retained_hours": 240.0,
+      "total_hours": 360.0,
+      "compile_seconds": 4.565414875280112,
+      "median_seconds": 1.8564768752548844,
+      "mean_seconds": 1.8756386041641235,
+      "min_seconds": 1.837864125147462,
+      "max_seconds": 1.9587243753485382,
+      "projected_hours_4x1000_tree10": 2110.1953815397187,
+      "projected_hours_1x100_tree10": 52.754884538492966
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "fixed_parameter": "chi_wake",
+  "fixed_value": 35.2,
+  "grid_index": 17,
+  "seed": "continuation",
+  "negative_log_likelihood": 0.08925195742011069,
+  "log_likelihood": -0.08925195742011069,
+  "delta_nll_from_mle": -0.008400394596635663,
+  "success": true,
+  "nfev": 268,
+  "hit_solver_bound": false,
+  "reporting": {
+    "phase": 5.789983823892951,
+    "chi_sleep": 7.7535778158201385,
+    "chi_wake": 35.199999999999996,
+    "amplitude": 0.2084511683836211,
+    "threshold_gap": 0.4230976500576945,
+    "misclassification": 1.1140261369774966e-08,
+    "excursion_fraction": 0.9999999843154008,
+    "amplitude_fraction": 0.496312313459748,
+    "total_excursion": 0.41999999341246835
+  },
+  "t_on": 15.091021278112445,
+  "t_off": 23.065103151828353,
+  "tau": 35.51146580974424,
+  "transition_converged": true,
+  "transition_reason": null
+}

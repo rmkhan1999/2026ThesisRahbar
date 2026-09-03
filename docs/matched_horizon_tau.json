@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-11",
+  "soft_72h": {
+    "raue_band": [
+      12.373,
+      40.0
+    ],
+    "raue_width": 27.627000000000002,
+    "t_on_span_min": 8.290220788934022,
+    "tau_span_h": 0.8734743348866445,
+    "max_dnll_15_26": 0.0012399999999992417
+  },
+  "soft_24h_matched": {
+    "raue_band": [
+      9.6,
+      40.0
+    ],
+    "raue_width": 30.4,
+    "t_on_span_min": 1.5507531326949575,
+    "tau_span_h": 6.733555796101243,
+    "max_dnll_15_26": 0.0004350209014355594
+  },
+  "hard_24h": {
+    "raue_band": [
+      9.6,
+      40.0
+    ],
+    "raue_width": 30.4,
+    "t_on_span_min": 1.5507531326949575,
+    "tau_span_h": 6.733555796101243,
+    "max_dnll_15_26": 0.0004350209014355594
+  },
+  "tau_span_agreement": {
+    "soft_24h": 6.733555796101243,
+    "hard_24h": 6.733555796101243,
+    "absolute_difference": 0.0,
+    "matches_to_two_decimals": true,
+    "bit_identical_grid": true
+  },
+  "verdict": "exact_agreement_at_matched_horizon",
+  "horizon_ratio": {
+    "tau_span_72_over_24": 0.1297196253118434,
+    "recording_length_ratio": 3.0,
+    "narrowing_factor": 7.708933768471964
+  }
+}

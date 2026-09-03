@@ -1,0 +1,34 @@
+{
+  "date": "2026-07-28",
+  "diagnostics": null,
+  "effective_config_sha256": "3917c2e98332599af98aa75ee1d8136c8162225bcef5dfca6b4b100c776932f2",
+  "error": {
+    "message": "INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/callback.py\", line 782, in _wrapped_callback\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/callback.py\", line 222, in _callback\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/callback.py\", line 96, in pure_callback_impl\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/callback.py\", line 71, in __call__\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/equinox/_errors.py\", line 88, in raises\n_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.\n\n\n--------------------\nAn error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.\n--------------------\n",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/rahbarmkhan/Documents/2026ThesisRahbar/scripts/run_mcmc.py\", line 182, in run_mcmc\n    result_holder[\"result\"] = run_sequential_nuts(\n                              ~~~~~~~~~~~~~~~~~~~^\n        labels=recording.observations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<7 lines>...\n        design=arguments.design,\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/rahbarmkhan/Documents/2026ThesisRahbar/src/twopm/sampling.py\", line 197, in run_sequential_nuts\n    state = compiled_transition(state)\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/stages.py\", line 556, in __call__\n    return self._call(*args, **kwargs)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/stages.py\", line 553, in cpp_call_fallback\n    outs, _, _ = Compiled.call(params, *args, **kwargs)\n                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/stages.py\", line 525, in call\n    out_flat = params.executable.call(*args_flat)\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/interpreters/pxla.py\", line 3133, in call\n    return self.unsafe_call(*args)  # pylint: disable=not-callable\n           ~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/profiler.py\", line 354, in wrapper\n    return func(*args, **kwargs)\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/interpreters/pxla.py\", line 1297, in __call__\n    results = self.xla_executable.execute_sharded(\n        input_bufs, with_tokens=True\n    )\njaxlib._jax.XlaRuntimeError: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/callback.py\", line 782, in _wrapped_callback\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/callback.py\", line 222, in _callback\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/callback.py\", line 96, in pure_callback_impl\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/jax/_src/callback.py\", line 71, in __call__\n  File \"/Users/rahbarmkhan/miniconda3/lib/python3.13/site-packages/equinox/_errors.py\", line 88, in raises\n_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.\n\n\n--------------------\nAn error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.\n--------------------\n\n",
+    "type": "XlaRuntimeError"
+  },
+  "git": {
+    "commit": "32c70d8",
+    "working_tree_dirty": true
+  },
+  "outcome": "crashed",
+  "run_id": "RUN-001",
+  "sampler": {
+    "burn_in_hours": 120.0,
+    "chain_method": "sequential",
+    "chains": 1,
+    "design": "entrained",
+    "draws": 50,
+    "init_strategy": "init_to_median",
+    "max_tree_depth": 10,
+    "retained_hours": 72.0,
+    "target_accept_prob": 0.8,
+    "thread_stack_bytes": 268435456,
+    "warmup": 50
+  },
+  "seed": 0,
+  "source_snapshot_sha256": "513310722fe851138b539cf8979a3bd737b94563075e96f9c601646dfe3d1d1f",
+  "timings": {
+    "data_generation_seconds": 1.119603166822344
+  }
+}

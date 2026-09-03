@@ -1,0 +1,15 @@
+{
+  "compile_seconds": 10.250912999734282,
+  "compile_seconds_by_chain": [
+    10.250912999734282
+  ],
+  "data_generation_seconds": 1.5486274999566376,
+  "sampling_seconds": 13807.41442995891,
+  "sampling_seconds_by_chain": [
+    13807.41442995891
+  ],
+  "warmup_seconds": 6393.666284665931,
+  "warmup_seconds_by_chain": [
+    6393.666284665931
+  ]
+}

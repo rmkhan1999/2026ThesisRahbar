@@ -1,0 +1,95 @@
+{
+  "note": "tau_g retest at k=650, dt=0.01 after stiffness hypothesis confirmed",
+  "variants": [
+    {
+      "k": 650.0,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.01,
+      "dt_over_tau_gate": 0.19999999999999998,
+      "forced_transition_mae_hours": 0.2636957311141964,
+      "forced_transition_max_hours": 0.8093507869225789,
+      "matched_transitions": 19,
+      "unmatched_hard": 0,
+      "unmatched_soft": 0,
+      "epoch_label_agreement": 0.9896049896049897,
+      "soft_sleep_fraction": 0.3305613305613306,
+      "hard_sleep_fraction": 0.3367983367983368,
+      "gate_min": 3.8267062950256088e-90,
+      "gate_max": 0.9999999999999997,
+      "gate_in_unit_interval": true,
+      "ic_invariance": {
+        "burn_in_hours": 72.0,
+        "max_transition_delta_hours": 0.0010003172569650332,
+        "labels_identical": true,
+        "comparable": true,
+        "pass": true
+      },
+      "free_running_informational": {
+        "period_cv": 0.005219470310622588,
+        "gate_min": 5.1082927927564233e-64,
+        "gate_max": 0.9999999999999996,
+        "n_transitions": 21
+      }
+    },
+    {
+      "k": 650.0,
+      "tau_gate": 0.2,
+      "fixed_step_size": 0.01,
+      "dt_over_tau_gate": 0.049999999999999996,
+      "forced_transition_mae_hours": 0.13310901870535352,
+      "forced_transition_max_hours": 0.35323884386359516,
+      "matched_transitions": 19,
+      "unmatched_hard": 0,
+      "unmatched_soft": 0,
+      "epoch_label_agreement": 0.9812889812889813,
+      "soft_sleep_fraction": 0.3180873180873181,
+      "hard_sleep_fraction": 0.3367983367983368,
+      "gate_min": 2.841455811896569e-34,
+      "gate_max": 0.999999999999998,
+      "gate_in_unit_interval": true,
+      "ic_invariance": {
+        "burn_in_hours": 72.0,
+        "max_transition_delta_hours": 0.07773490405348227,
+        "labels_identical": false,
+        "comparable": true,
+        "pass": false
+      },
+      "free_running_informational": {
+        "period_cv": 0.00048597772539594097,
+        "gate_min": 9.495054162361619e-28,
+        "gate_max": 0.999999999999831,
+        "n_transitions": 21
+      }
+    },
+    {
+      "k": 650.0,
+      "tau_gate": 0.5,
+      "fixed_step_size": 0.01,
+      "dt_over_tau_gate": 0.02,
+      "forced_transition_mae_hours": 0.560851707032427,
+      "forced_transition_max_hours": 0.6819918709738317,
+      "matched_transitions": 19,
+      "unmatched_hard": 0,
+      "unmatched_soft": 0,
+      "epoch_label_agreement": 0.9459459459459459,
+      "soft_sleep_fraction": 0.316008316008316,
+      "hard_sleep_fraction": 0.3367983367983368,
+      "gate_min": 2.9880440967742556e-18,
+      "gate_max": 0.9999999953426814,
+      "gate_in_unit_interval": true,
+      "ic_invariance": {
+        "burn_in_hours": 72.0,
+        "max_transition_delta_hours": 0.09922411263641173,
+        "labels_identical": false,
+        "comparable": true,
+        "pass": false
+      },
+      "free_running_informational": {
+        "period_cv": 0.0008092628016827273,
+        "gate_min": 5.327145054580683e-14,
+        "gate_max": 0.9999999542678263,
+        "n_transitions": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-28",
+  "effective_config_sha256": "02ff91d7c3ec906421a41c04dbf57ff6393b98ad8f016f3e512a5831cfebc2bb",
+  "epsilon_at_warmup": "not captured",
+  "git": {
+    "commit": "32c70d8",
+    "working_tree_dirty": true
+  },
+  "note": "Killed before warmup finished; step size only recorded after full warmup in then-current runner.",
+  "note_recent": "iteration 20 at ~29 min; last 94 iters ~7.6 h => 291 s/iter",
+  "outcome": "abandoned",
+  "run_id": "RUN-005",
+  "sampler": {
+    "burn_in_hours": 72.0,
+    "chain_method": "sequential",
+    "chains": 2,
+    "design": "entrained",
+    "draws": 50,
+    "init_strategy": "init_to_median",
+    "max_tree_depth": 10,
+    "retained_hours": 72.0,
+    "target_accept_prob": 0.8,
+    "thread_stack_bytes": 268435456,
+    "warmup": 300
+  },
+  "seconds_per_iteration_average": 255.78947368421052,
+  "seconds_per_iteration_recent_iters_21_to_114": 291.06382978723406,
+  "seed": 0,
+  "source_snapshot_sha256": "43f750debac632a0dbc3d3e885894530d99353300ac70caa021c930cd79d2aed",
+  "wall_hours_approx": 8.1,
+  "warmup_iterations_completed": 114,
+  "warmup_iterations_planned": 300
+}

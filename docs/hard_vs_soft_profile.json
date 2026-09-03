@@ -1,0 +1,90 @@
+{
+  "date": "2026-08-10",
+  "soft_source": "docs/profile_chi_wake_partial.json",
+  "hard_source": "docs/profile_hard_chi_wake.json",
+  "note": "Soft profile used default 72 h retained / 72 h burn-in; hard design is 24 h / 48 h. Width differences must note that mismatch. Preregistered flatness uses \u0394nll<2 and t_on span on \u03c7_w\u2208[15,26] h, not t_on drift at the full Raue-band edge.",
+  "soft": {
+    "label": "soft_generated",
+    "full_raue_band": {
+      "mle_nll": 10.555013,
+      "raue_threshold": 2.0,
+      "n_points_in_band": 19,
+      "chi_wake_band_hours": [
+        12.373,
+        40.0
+      ],
+      "chi_wake_band_width_hours": 27.627000000000002,
+      "t_on_range_minutes": 16.078333218888616,
+      "tau_range_hours": 6.60314159226791,
+      "max_delta_nll": 0.8109609999999989
+    },
+    "preregistered_15_to_26": {
+      "mle_nll": 10.555013,
+      "raue_threshold": 2.0,
+      "n_points_in_band": 7,
+      "chi_wake_band_hours": [
+        15.443,
+        24.652
+      ],
+      "chi_wake_band_width_hours": 9.209000000000001,
+      "t_on_range_minutes": 8.290220788934022,
+      "tau_range_hours": 0.8734743348866445,
+      "max_delta_nll": 0.0012399999999992417
+    },
+    "covers_15_to_26_under_raue": true,
+    "preregistered_flat": true,
+    "chi_wake_band_hours": [
+      12.373,
+      40.0
+    ],
+    "chi_wake_band_width_hours": 27.627000000000002,
+    "t_on_range_minutes_full_band": 16.078333218888616,
+    "t_on_range_minutes_15_to_26": 8.290220788934022,
+    "tau_range_hours_full_band": 6.60314159226791,
+    "tau_range_hours_15_to_26": 0.8734743348866445,
+    "max_delta_nll_15_to_26": 0.0012399999999992417
+  },
+  "hard": {
+    "label": "hard_generated",
+    "full_raue_band": {
+      "mle_nll": 0.08803927060272075,
+      "raue_threshold": 2.0,
+      "n_points_in_band": 20,
+      "chi_wake_band_hours": [
+        9.6,
+        40.0
+      ],
+      "chi_wake_band_width_hours": 30.4,
+      "t_on_range_minutes": 33.741110000447065,
+      "tau_range_hours": 20.740606503796833,
+      "max_delta_nll": 0.03851214896491269
+    },
+    "preregistered_15_to_26": {
+      "mle_nll": 0.08803927060272075,
+      "raue_threshold": 2.0,
+      "n_points_in_band": 7,
+      "chi_wake_band_hours": [
+        16.0,
+        25.6
+      ],
+      "chi_wake_band_width_hours": 9.600000000000001,
+      "t_on_range_minutes": 1.5507531326949575,
+      "tau_range_hours": 6.733555796101243,
+      "max_delta_nll": 0.0004350209014355594
+    },
+    "covers_15_to_26_under_raue": true,
+    "preregistered_flat": true,
+    "chi_wake_band_hours": [
+      9.6,
+      40.0
+    ],
+    "chi_wake_band_width_hours": 30.4,
+    "t_on_range_minutes_full_band": 33.741110000447065,
+    "t_on_range_minutes_15_to_26": 1.5507531326949575,
+    "tau_range_hours_full_band": 20.740606503796833,
+    "tau_range_hours_15_to_26": 6.733555796101243,
+    "max_delta_nll_15_to_26": 0.0004350209014355594
+  },
+  "verdict": "both_flat_similar",
+  "conclusion": "Degeneracy is a model property. Theorem validated against hard data."
+}

@@ -1,0 +1,106 @@
+{
+  "replicate": 3,
+  "date": "2026-08-09",
+  "seed": 20260811,
+  "config_sha256": "6f66c7ae2062d06439b961571ea81fb364770d778e139f4e7693dcdfc636bfc3",
+  "sampler": {
+    "design": "entrained",
+    "retained_hours": 24.0,
+    "burn_in_hours": 48.0,
+    "warmup": 200,
+    "draws": 100,
+    "chains": 1,
+    "max_tree_depth": 7,
+    "dense_mass": true,
+    "fixed_misclassification": 0.01,
+    "adjoint_mode": "recursive_checkpoint",
+    "adjoint_checkpoints": 180,
+    "chain_method": "sequential"
+  },
+  "generating_parameters": {
+    "chi_sleep": 3.708585229750985,
+    "chi_wake": 19.786923367790923,
+    "amplitude": 0.12819151042591803,
+    "phase": 12.943271905298028,
+    "threshold_gap": 0.4721975740492549,
+    "c1": -0.1243025624033729,
+    "c2": -0.03133586324379526,
+    "tau": 21.816478973395533,
+    "phase_z1": -1.4668682036736254,
+    "phase_z2": -0.3697878831960513,
+    "excursion_fraction": 0.8673578510727273,
+    "amplitude_fraction": 0.35189383665460033,
+    "upper": 0.6560987870246274,
+    "lower": 0.1839012129753725
+  },
+  "ranks": {
+    "phase_z1": 0.02,
+    "phase_z2": 0.0,
+    "excursion_fraction": 0.04,
+    "amplitude_fraction": 0.44,
+    "chi_sleep": 0.22,
+    "chi_wake": 0.08,
+    "tau": 0.01,
+    "phase": 0.98,
+    "phase_linear_ecdf": 0.98
+  },
+  "rank_sites": [
+    "phase_z1",
+    "phase_z2",
+    "excursion_fraction",
+    "amplitude_fraction",
+    "chi_sleep",
+    "chi_wake",
+    "tau",
+    "phase"
+  ],
+  "rank_definition": "For each site, fractional rank of the prior draw \u03b8_true among posterior samples: mean(\u03b8_post < \u03b8_true). Phase uses signed-wrap circular rank; phase_linear_ecdf is the cut-circle linear ECDF.",
+  "contraction": {
+    "chi_sleep": 0.2949373263075483,
+    "chi_wake": 0.5581048207186985,
+    "amplitude": 0.12303899510538685,
+    "tau": 0.704623260365088,
+    "threshold_gap": 0.6851274701642918
+  },
+  "transition_times": {
+    "true_transition_count": 2,
+    "true_transition_times": [
+      3.761816712553492,
+      20.336572657667826
+    ],
+    "true_first_transition": 3.761816712553492,
+    "true_onset_times": [
+      3.761816712553492
+    ],
+    "true_offset_times": [
+      20.336572657667826
+    ],
+    "posterior_mean_params": {
+      "c1": -0.13693484878224013,
+      "c2": 0.011742755189737735,
+      "chi_sleep": 4.0759628684090625,
+      "chi_wake": 22.239420939165957,
+      "threshold_gap": 0.5117533943219715,
+      "phase": 11.60310022829034
+    }
+  },
+  "diagnostics": {
+    "ess_bulk": {
+      "phase_z1": 33.41106724749433,
+      "phase_z2": 31.2553044764353,
+      "excursion_fraction": 19.456425738517982,
+      "amplitude_fraction": 16.33951115063756,
+      "chi_sleep": 28.878108008515664,
+      "chi_wake": 24.424125615290645,
+      "tau": 30.630157611844062
+    },
+    "ess_bulk_min": 16.33951115063756,
+    "divergences": 2,
+    "total_draws": 100,
+    "tree_depth_saturation_fraction": 0.42,
+    "median_num_steps": 95.0,
+    "wall_seconds": 13255.788484666962
+  },
+  "entrainment_failed": false,
+  "true_transition_count": 2
+}

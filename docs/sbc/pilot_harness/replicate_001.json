@@ -1,0 +1,83 @@
+{
+  "replicate": 1,
+  "date": "2026-08-09",
+  "seed": 20260809,
+  "config_sha256": "6f66c7ae2062d06439b961571ea81fb364770d778e139f4e7693dcdfc636bfc3",
+  "sampler": {
+    "design": "entrained",
+    "retained_hours": 24.0,
+    "burn_in_hours": 48.0,
+    "warmup": 200,
+    "draws": 100,
+    "chains": 1,
+    "max_tree_depth": 7,
+    "dense_mass": true,
+    "fixed_misclassification": 0.01,
+    "adjoint_mode": "recursive_checkpoint",
+    "adjoint_checkpoints": 180
+  },
+  "generating_parameters": {
+    "chi_sleep": 5.070602816026298,
+    "chi_wake": 22.686848466669055,
+    "amplitude": 0.07498795118815806,
+    "phase": 8.468126263712994,
+    "threshold_gap": 0.4845697806305388,
+    "c1": -0.04515175679977944,
+    "c2": 0.05987079155390503,
+    "tau": 26.859118327190732,
+    "phase_z1": -0.5029657413332025,
+    "phase_z2": 0.6669276943452748,
+    "excursion_fraction": 0.7554115273891129,
+    "amplitude_fraction": 0.23635162352006095
+  },
+  "ranks": {
+    "chi_sleep": 1.0,
+    "chi_wake": 0.97,
+    "amplitude": 0.0,
+    "phase": 0.1,
+    "threshold_gap": 0.71,
+    "c1": 0.94,
+    "c2": 0.76,
+    "tau": 0.85,
+    "phase_z1": 0.95,
+    "phase_z2": 0.77,
+    "excursion_fraction": 0.16,
+    "amplitude_fraction": 0.04
+  },
+  "contraction": {
+    "chi_sleep": 0.5222551856408693,
+    "chi_wake": 0.3827968951926215,
+    "amplitude": 0.24198027137783973,
+    "tau": -0.04558967827614713
+  },
+  "transition_time_posterior": {
+    "true_transition_count": 2,
+    "true_first_transition": 1.2707562594127708,
+    "posterior_mean_params": {
+      "c1": -0.10013550348982508,
+      "c2": 0.013877967859101068,
+      "chi_sleep": 3.7096027184543128,
+      "chi_wake": 18.93031470694909,
+      "threshold_gap": 0.464505430759662
+    }
+  },
+  "diagnostics": {
+    "ess_bulk": {
+      "phase_z1": 43.29217576976468,
+      "phase_z2": 7.247872486946933,
+      "excursion_fraction": 10.835959457301186,
+      "amplitude_fraction": 2.2511049468145394,
+      "chi_sleep": 5.608459380153653,
+      "chi_wake": 15.615881175099936,
+      "tau": 7.781928544662355
+    },
+    "ess_bulk_min": 2.2511049468145394,
+    "divergences": 0,
+    "total_draws": 100,
+    "tree_depth_saturation_fraction": 0.0,
+    "median_num_steps": 0.0,
+    "wall_seconds": 13692.676758499816
+  },
+  "entrainment_failed": false,
+  "true_transition_count": 2
+}

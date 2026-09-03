@@ -1,0 +1,71 @@
+{
+  "date": "2026-07-28",
+  "diagnostics": {
+    "adapted_step_size_by_chain": [
+      1.976442871061382e-05
+    ],
+    "bfmi_by_chain": [
+      1.7274079083251253
+    ],
+    "diagnostic_variables": [
+      "phase_z1",
+      "phase_z2",
+      "excursion_fraction",
+      "amplitude_fraction",
+      "chi_sleep",
+      "chi_wake",
+      "misclassification",
+      "tau"
+    ],
+    "divergences": 42,
+    "ess_bulk_min": 1.4996949225598677,
+    "ess_tail_min": 12.122583565009373,
+    "median_num_steps": 242.0,
+    "phase": {
+      "circular_mean_hours": 18.777704376805264,
+      "circular_sd_hours": 0.00046171015854245504
+    },
+    "phase_diagnostics_excluded": true,
+    "rhat_max": null,
+    "total_draws": 50,
+    "tree_depth_saturation_fraction": 0.04
+  },
+  "effective_config_sha256": "000f3eae4e79a81514645bfc523839deedc6e3c1e4b8cd42ea658b4b1e7f348a",
+  "git": {
+    "commit": "32c70d8",
+    "working_tree_dirty": true
+  },
+  "observed_epochs": 145,
+  "outcome": "diverged",
+  "run_id": "RUN-004",
+  "sampler": {
+    "burn_in_hours": 120.0,
+    "chain_method": "sequential",
+    "chains": 1,
+    "design": "entrained",
+    "draws": 50,
+    "init_strategy": "init_to_median",
+    "max_tree_depth": 10,
+    "retained_hours": 72.0,
+    "target_accept_prob": 0.8,
+    "thread_stack_bytes": 268435456,
+    "warmup": 50
+  },
+  "seed": 0,
+  "source_snapshot_sha256": "62c00d50302436f2af1775f077f5bc4aa2421573255594346c342a23a5e7d681",
+  "timings": {
+    "compile_seconds": 10.250912999734282,
+    "compile_seconds_by_chain": [
+      10.250912999734282
+    ],
+    "data_generation_seconds": 1.5486274999566376,
+    "sampling_seconds": 13807.41442995891,
+    "sampling_seconds_by_chain": [
+      13807.41442995891
+    ],
+    "warmup_seconds": 6393.666284665931,
+    "warmup_seconds_by_chain": [
+      6393.666284665931
+    ]
+  }
+}

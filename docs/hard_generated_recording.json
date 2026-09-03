@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-10",
+  "generator": "hard_switch",
+  "dt": 0.001,
+  "burn_in_hours": 48.0,
+  "retained_hours": 24.0,
+  "epoch_hours": 0.5,
+  "misclassification": 0.01,
+  "seed": 31416,
+  "phase": 8.0,
+  "amplitude": 0.12,
+  "chi_sleep": 4.2,
+  "chi_wake": 18.2,
+  "upper": 0.67,
+  "lower": 0.17,
+  "config_sha256": "26dd24ded16348569dcf92353d5e0f5a051246f46a9989a73be136259a40f044",
+  "n_epochs": 49,
+  "n_label_diffs_vs_soft_same_key": 0,
+  "true_switch_times": [
+    15.463999999999999,
+    23.400000000000006
+  ],
+  "true_switch_states_asleep": [
+    true,
+    false
+  ],
+  "sanity": "Expect 0\u20132 epoch diffs vs soft on a 0.5 h grid given ~3 min median soft\u2013hard bias; many diffs \u21d2 stop and diagnose.",
+  "npz_path": "docs/hard_generated_recording.npz"
+}

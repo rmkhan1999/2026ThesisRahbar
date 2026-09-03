@@ -1,0 +1,4 @@
+gradient_timing median_seconds=2.650697 compile_seconds=4.601
+chain=1 phase=warmup iteration=1/200 step_size=2.335065e+00 mean_tree_depth=1.00 divergences_so_far=1 seconds_per_iteration=2.603
+chain=1 phase=warmup iteration=10/200 step_size=1.515044e-05 mean_tree_depth=5.90 divergences_so_far=3 seconds_per_iteration=673.812
+chain=1 phase=warmup iteration=20/200 step_size=5.429854e-06 mean_tree_depth=9.00 divergences_so_far=3 seconds_per_iteration=1267.215

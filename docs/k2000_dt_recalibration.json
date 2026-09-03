@@ -1,0 +1,24 @@
+{
+  "k": 2000.0,
+  "ic_rows": [
+    {
+      "dt": 0.02,
+      "max_ic": 0.03399824250437433,
+      "pass": false
+    },
+    {
+      "dt": 0.01,
+      "max_ic": 0.01291164195026795,
+      "pass": false
+    },
+    {
+      "dt": 0.005,
+      "max_ic": 0.00662813131984219,
+      "pass": true
+    }
+  ],
+  "chosen_dt": 0.005,
+  "smoke_72h_median_gradient_seconds": 2.1326123122125864,
+  "compile_seconds": 4.543530999682844,
+  "projected_hours_4x1000_tree10": 2424.069328214973
+}

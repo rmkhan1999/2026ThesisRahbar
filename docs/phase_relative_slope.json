@@ -1,0 +1,143 @@
+{
+  "date": "2026-08-08",
+  "hypothesis": "Soft IC discrepancy tracks |dH/dt - dU/dt| (relative crossing speed) rather than |dH/dt|; lag \u03c4_g ln2 amplified when threshold velocity cancels pressure slope.",
+  "tau_g_ln2_hours": 0.1039720770839918,
+  "rows": [
+    {
+      "phase": 0.0,
+      "circadian_displacement_t0": 0.12,
+      "max_IC_delta_hours": 0.17501460267794045,
+      "first_onset_clock_range_hours": 0.24245726059323403,
+      "mean_abs_dH": 0.020333476968488497,
+      "mean_abs_dH_minus_dU": 0.04989138376387542,
+      "mean_abs_dU": 0.029544215046439518,
+      "ics": [
+        {
+          "H0": 0.2,
+          "t_on_abs": 55.480000000000004,
+          "t_on_clock": 7.480000000000004,
+          "dH_dt": 0.02063222609741732,
+          "dU_dt_fd": -0.029102587118219992,
+          "dU_dt_analytic": -0.029087082274139645,
+          "abs_dH": 0.02063222609741732,
+          "abs_dH_minus_dU": 0.049734813215637316,
+          "abs_dH_minus_dU_analytic": 0.04971930837155697,
+          "lag_over_rel_speed_hours": 2.0905291557685297,
+          "lag_hours": 0.1039720770839918
+        },
+        {
+          "H0": 0.4,
+          "t_on_abs": 55.480000000000004,
+          "t_on_clock": 7.480000000000004,
+          "dH_dt": 0.02062976475568689,
+          "dU_dt_fd": -0.029102587118219992,
+          "dU_dt_analytic": -0.029087082274139645,
+          "abs_dH": 0.02062976475568689,
+          "abs_dH_minus_dU": 0.049732351873906885,
+          "abs_dH_minus_dU_analytic": 0.04971684702982654,
+          "lag_over_rel_speed_hours": 2.0906326197402882,
+          "lag_hours": 0.1039720770839918
+        },
+        {
+          "H0": 0.6,
+          "t_on_abs": 54.88,
+          "t_on_clock": 6.880000000000003,
+          "dH_dt": 0.019633989025362196,
+          "dU_dt_fd": -0.03059523889864022,
+          "dU_dt_analytic": -0.030585883289563312,
+          "abs_dH": 0.019633989025362196,
+          "abs_dH_minus_dU": 0.05022922792400242,
+          "abs_dH_minus_dU_analytic": 0.05021987231492551,
+          "lag_over_rel_speed_hours": 2.069951726936817,
+          "lag_hours": 0.1039720770839918
+        },
+        {
+          "H0": 0.8,
+          "t_on_abs": 55.370000000000005,
+          "t_on_clock": 7.3700000000000045,
+          "dH_dt": 0.020437927995487583,
+          "dU_dt_fd": -0.029431214046467466,
+          "dU_dt_analytic": -0.029416812347915464,
+          "abs_dH": 0.020437927995487583,
+          "abs_dH_minus_dU": 0.04986914204195505,
+          "abs_dH_minus_dU_analytic": 0.04985474034340305,
+          "lag_over_rel_speed_hours": 2.0848980517154234,
+          "lag_hours": 0.1039720770839918
+        }
+      ]
+    },
+    {
+      "phase": 8.0,
+      "circadian_displacement_t0": -0.05999999999999998,
+      "max_IC_delta_hours": 0.007131432839642571,
+      "first_onset_clock_range_hours": 0.007131432839642571,
+      "mean_abs_dH": 0.020599182233392514,
+      "mean_abs_dH_minus_dU": 0.04973264602708295,
+      "mean_abs_dU": 0.029118058717942513,
+      "ics": [
+        {
+          "H0": 0.2,
+          "t_on_abs": 63.47,
+          "t_on_clock": 15.469999999999999,
+          "dH_dt": 0.02059216442556321,
+          "dU_dt_fd": -0.02913346379369044,
+          "dU_dt_analytic": -0.029118058717942513,
+          "abs_dH": 0.02059216442556321,
+          "abs_dH_minus_dU": 0.04972562821925365,
+          "abs_dH_minus_dU_analytic": 0.04971022314350572,
+          "lag_over_rel_speed_hours": 2.090915304791143,
+          "lag_hours": 0.1039720770839918
+        },
+        {
+          "H0": 0.4,
+          "t_on_abs": 63.47,
+          "t_on_clock": 15.469999999999999,
+          "dH_dt": 0.0205997286140721,
+          "dU_dt_fd": -0.02913346379369044,
+          "dU_dt_analytic": -0.029118058717942513,
+          "abs_dH": 0.0205997286140721,
+          "abs_dH_minus_dU": 0.04973319240776254,
+          "abs_dH_minus_dU_analytic": 0.04971778733201461,
+          "lag_over_rel_speed_hours": 2.0905972862454623,
+          "lag_hours": 0.1039720770839918
+        },
+        {
+          "H0": 0.6,
+          "t_on_abs": 63.47,
+          "t_on_clock": 15.469999999999999,
+          "dH_dt": 0.020596056451875556,
+          "dU_dt_fd": -0.02913346379369044,
+          "dU_dt_analytic": -0.029118058717942513,
+          "abs_dH": 0.020596056451875556,
+          "abs_dH_minus_dU": 0.049729520245566,
+          "abs_dH_minus_dU_analytic": 0.049714115169818066,
+          "lag_over_rel_speed_hours": 2.0907516616000774,
+          "lag_hours": 0.1039720770839918
+        },
+        {
+          "H0": 0.8,
+          "t_on_abs": 63.47,
+          "t_on_clock": 15.469999999999999,
+          "dH_dt": 0.02060877944205918,
+          "dU_dt_fd": -0.02913346379369044,
+          "dU_dt_analytic": -0.029118058717942513,
+          "abs_dH": 0.02060877944205918,
+          "abs_dH_minus_dU": 0.04974224323574962,
+          "abs_dH_minus_dU_analytic": 0.049726838160001695,
+          "lag_over_rel_speed_hours": 2.0902168925358664,
+          "lag_hours": 0.1039720770839918
+        }
+      ]
+    }
+  ],
+  "tracking": {
+    "delta_ratio_phase0_over_phase8": 24.541295783514975,
+    "mean_abs_dH_ratio_phase8_over_phase0": 1.0130673797361756,
+    "mean_abs_dH_minus_dU_ratio_phase8_over_phase0": 0.9968183336516835,
+    "inv_rel_speed_ratio_phase0_over_phase8": 1.0031918216598816,
+    "within_phase0_corr_dev_vs_rel": 0.8091760071594831,
+    "within_phase0_corr_dev_vs_inv_rel": -0.8079359959398131
+  },
+  "verdict": "DOES_NOT_TRACK: mean |dH/dt - dU/dt| differs by <0.3% across phases while max IC \u0394 differs ~25\u00d7. Record unexplained; do not claim phase-dependent fidelity.",
+  "interpretation": "Relative threshold velocity hypothesis ruled out for the phase-0 vs true_phase comparison. Within phase=0, |dH-dU| variation across ICs is tiny (~1%) and corr(dev, 1/rel) has the wrong sign for lag amplification."
+}

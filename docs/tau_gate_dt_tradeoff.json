@@ -1,0 +1,695 @@
+{
+  "criteria": {
+    "dt_over_tau_gate": 0.02,
+    "bias_max_minutes": 5.0,
+    "cosine_min": 0.9999,
+    "n_gradient_draws": 20,
+    "burn_in_hours": 96.0,
+    "retained_hours": 48.0
+  },
+  "configurations": [
+    {
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "dt_over_tau_gate": 0.02,
+      "bias": {
+        "hard_t_on": 15.460000000000008,
+        "hard_t_off": 23.400000000000006,
+        "analytic_t_on": 15.45808339658702,
+        "analytic_t_off": 23.397764713282534,
+        "soft_t_on": 15.251830717280257,
+        "soft_t_off": 23.24996343062527,
+        "bias_on_minutes": -12.490156963185086,
+        "bias_off_minutes": -9.002194162484045,
+        "max_abs_bias_minutes": 12.490156963185086,
+        "gate_min": 5.689778665981705e-87,
+        "gate_max": 0.9999999999999942
+      },
+      "gradient_audit": {
+        "min_cosine": 0.9999754879169062,
+        "median_cosine": 0.9999998986281432,
+        "all_pass_cosine": true,
+        "n_draws": 20,
+        "seconds": 346.2632667091675,
+        "draws": [
+          {
+            "draw": 0,
+            "cosine_similarity": 0.9999973464045399,
+            "ad_norm": 1225.8450177947882,
+            "fd_norm": 1218.7940791156614,
+            "pass_cosine": true
+          },
+          {
+            "draw": 1,
+            "cosine_similarity": 0.9999997417766343,
+            "ad_norm": 128.63787072220387,
+            "fd_norm": 128.93103419412734,
+            "pass_cosine": true
+          },
+          {
+            "draw": 2,
+            "cosine_similarity": 0.9999974582627273,
+            "ad_norm": 2286.9994227869875,
+            "fd_norm": 2282.4257413405417,
+            "pass_cosine": true
+          },
+          {
+            "draw": 3,
+            "cosine_similarity": 0.9999999041938444,
+            "ad_norm": 28.31618292161246,
+            "fd_norm": 28.33111367213976,
+            "pass_cosine": true
+          },
+          {
+            "draw": 4,
+            "cosine_similarity": 0.9999999419436411,
+            "ad_norm": 77.06773116938868,
+            "fd_norm": 77.07008088615076,
+            "pass_cosine": true
+          },
+          {
+            "draw": 5,
+            "cosine_similarity": 0.99999959431542,
+            "ad_norm": 69.846162756759,
+            "fd_norm": 69.63547250808875,
+            "pass_cosine": true
+          },
+          {
+            "draw": 6,
+            "cosine_similarity": 0.9999754879169062,
+            "ad_norm": 145.58783925956223,
+            "fd_norm": 144.21216492048677,
+            "pass_cosine": true
+          },
+          {
+            "draw": 7,
+            "cosine_similarity": 0.9999999384159276,
+            "ad_norm": 249.69756360307534,
+            "fd_norm": 249.51371859773755,
+            "pass_cosine": true
+          },
+          {
+            "draw": 8,
+            "cosine_similarity": 0.999999982540771,
+            "ad_norm": 303.3014174226568,
+            "fd_norm": 303.17576284400207,
+            "pass_cosine": true
+          },
+          {
+            "draw": 9,
+            "cosine_similarity": 0.9999999865174013,
+            "ad_norm": 141.26021326893004,
+            "fd_norm": 141.26416429897301,
+            "pass_cosine": true
+          },
+          {
+            "draw": 10,
+            "cosine_similarity": 0.999999953264324,
+            "ad_norm": 40.04325409912424,
+            "fd_norm": 40.01927811209044,
+            "pass_cosine": true
+          },
+          {
+            "draw": 11,
+            "cosine_similarity": 0.9999999410330447,
+            "ad_norm": 8.795077566274932,
+            "fd_norm": 8.794655549214188,
+            "pass_cosine": true
+          },
+          {
+            "draw": 12,
+            "cosine_similarity": 0.9999999853816189,
+            "ad_norm": 289.858670011665,
+            "fd_norm": 289.6794183144862,
+            "pass_cosine": true
+          },
+          {
+            "draw": 13,
+            "cosine_similarity": 0.9999997167115822,
+            "ad_norm": 584.8679042257469,
+            "fd_norm": 583.7132541723375,
+            "pass_cosine": true
+          },
+          {
+            "draw": 14,
+            "cosine_similarity": 0.9999999984097754,
+            "ad_norm": 13.878918316935877,
+            "fd_norm": 13.87776476297129,
+            "pass_cosine": true
+          },
+          {
+            "draw": 15,
+            "cosine_similarity": 0.9999989005952487,
+            "ad_norm": 1939.432891576526,
+            "fd_norm": 1933.5153264352007,
+            "pass_cosine": true
+          },
+          {
+            "draw": 16,
+            "cosine_similarity": 0.9999995965574108,
+            "ad_norm": 88.02482718503269,
+            "fd_norm": 87.67333516489538,
+            "pass_cosine": true
+          },
+          {
+            "draw": 17,
+            "cosine_similarity": 0.999999893062442,
+            "ad_norm": 197.31503533717904,
+            "fd_norm": 197.14477366107144,
+            "pass_cosine": true
+          },
+          {
+            "draw": 18,
+            "cosine_similarity": 0.9999999243518349,
+            "ad_norm": 12.247591929326747,
+            "fd_norm": 12.245194274703355,
+            "pass_cosine": true
+          },
+          {
+            "draw": 19,
+            "cosine_similarity": 0.9999998309782142,
+            "ad_norm": 358.53430097401383,
+            "fd_norm": 358.1743872847247,
+            "pass_cosine": true
+          }
+        ]
+      },
+      "bias_ok": false,
+      "cosine_ok": true,
+      "acceptable": false
+    },
+    {
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "dt_over_tau_gate": 0.02,
+      "bias": {
+        "hard_t_on": 15.460000000000008,
+        "hard_t_off": 23.400000000000006,
+        "analytic_t_on": 15.45808339658702,
+        "analytic_t_off": 23.397764713282534,
+        "soft_t_on": 15.30298556779195,
+        "soft_t_off": 23.257790106433774,
+        "bias_on_minutes": -9.42086593248348,
+        "bias_off_minutes": -8.532593613973916,
+        "max_abs_bias_minutes": 9.42086593248348,
+        "gate_min": 2.3191533475955938e-54,
+        "gate_max": 0.9999999999999942
+      },
+      "gradient_audit": {
+        "min_cosine": 0.9999962194071014,
+        "median_cosine": 0.9999999863886981,
+        "all_pass_cosine": true,
+        "n_draws": 20,
+        "seconds": 164.67063716705889,
+        "draws": [
+          {
+            "draw": 0,
+            "cosine_similarity": 0.9999999970200687,
+            "ad_norm": 118.37709464225179,
+            "fd_norm": 118.385176243146,
+            "pass_cosine": true
+          },
+          {
+            "draw": 1,
+            "cosine_similarity": 0.9999998368770885,
+            "ad_norm": 173.93009487137473,
+            "fd_norm": 174.14698413186753,
+            "pass_cosine": true
+          },
+          {
+            "draw": 2,
+            "cosine_similarity": 0.9999962194071014,
+            "ad_norm": 1673.935560852741,
+            "fd_norm": 1682.6609896318216,
+            "pass_cosine": true
+          },
+          {
+            "draw": 3,
+            "cosine_similarity": 0.9999999726274864,
+            "ad_norm": 342.92597864032143,
+            "fd_norm": 342.8184339241912,
+            "pass_cosine": true
+          },
+          {
+            "draw": 4,
+            "cosine_similarity": 0.999999995705383,
+            "ad_norm": 1630.4170575225885,
+            "fd_norm": 1630.6742806415884,
+            "pass_cosine": true
+          },
+          {
+            "draw": 5,
+            "cosine_similarity": 0.9999999349228799,
+            "ad_norm": 301.3829820702323,
+            "fd_norm": 301.0868468421148,
+            "pass_cosine": true
+          },
+          {
+            "draw": 6,
+            "cosine_similarity": 0.9999998283728084,
+            "ad_norm": 135.5840620788187,
+            "fd_norm": 135.8457621797313,
+            "pass_cosine": true
+          },
+          {
+            "draw": 7,
+            "cosine_similarity": 0.9999999928346008,
+            "ad_norm": 62.378493287021875,
+            "fd_norm": 62.36381238352958,
+            "pass_cosine": true
+          },
+          {
+            "draw": 8,
+            "cosine_similarity": 0.9999999996663906,
+            "ad_norm": 87.32528021058415,
+            "fd_norm": 87.32012557760208,
+            "pass_cosine": true
+          },
+          {
+            "draw": 9,
+            "cosine_similarity": 0.9999999978548682,
+            "ad_norm": 151.28886948976321,
+            "fd_norm": 151.31196120798987,
+            "pass_cosine": true
+          },
+          {
+            "draw": 10,
+            "cosine_similarity": 0.9999999959253638,
+            "ad_norm": 295.4827830884246,
+            "fd_norm": 295.50953356288636,
+            "pass_cosine": true
+          },
+          {
+            "draw": 11,
+            "cosine_similarity": 0.99999998538375,
+            "ad_norm": 24.211318877024436,
+            "fd_norm": 24.208586282248376,
+            "pass_cosine": true
+          },
+          {
+            "draw": 12,
+            "cosine_similarity": 0.9999968607065808,
+            "ad_norm": 56.30450701050067,
+            "fd_norm": 56.80691975460957,
+            "pass_cosine": true
+          },
+          {
+            "draw": 13,
+            "cosine_similarity": 0.9999973236133608,
+            "ad_norm": 129.26542135508961,
+            "fd_norm": 129.1136949938133,
+            "pass_cosine": true
+          },
+          {
+            "draw": 14,
+            "cosine_similarity": 0.9999999997907679,
+            "ad_norm": 28.420457267461465,
+            "fd_norm": 28.418195519112334,
+            "pass_cosine": true
+          },
+          {
+            "draw": 15,
+            "cosine_similarity": 0.9999999854084097,
+            "ad_norm": 43.15389413062539,
+            "fd_norm": 43.1436895817626,
+            "pass_cosine": true
+          },
+          {
+            "draw": 16,
+            "cosine_similarity": 0.9999999985374957,
+            "ad_norm": 763.3743062501437,
+            "fd_norm": 763.4416732572487,
+            "pass_cosine": true
+          },
+          {
+            "draw": 17,
+            "cosine_similarity": 0.999999904437774,
+            "ad_norm": 133.9160832994657,
+            "fd_norm": 133.8069142544774,
+            "pass_cosine": true
+          },
+          {
+            "draw": 18,
+            "cosine_similarity": 0.9999999932240845,
+            "ad_norm": 44.74767573112279,
+            "fd_norm": 44.74675770372862,
+            "pass_cosine": true
+          },
+          {
+            "draw": 19,
+            "cosine_similarity": 0.9999999873689865,
+            "ad_norm": 236.69775957262107,
+            "fd_norm": 236.63936447787827,
+            "pass_cosine": true
+          }
+        ]
+      },
+      "bias_ok": false,
+      "cosine_ok": true,
+      "acceptable": false
+    },
+    {
+      "tau_gate": 0.2,
+      "fixed_step_size": 0.004,
+      "dt_over_tau_gate": 0.02,
+      "bias": {
+        "hard_t_on": 15.460000000000008,
+        "hard_t_off": 23.400000000000006,
+        "analytic_t_on": 15.45808339658702,
+        "analytic_t_off": 23.397764713282534,
+        "soft_t_on": 15.682125117623187,
+        "soft_t_off": 23.37417009691913,
+        "bias_on_minutes": 13.327507057390733,
+        "bias_off_minutes": -1.5497941848525443,
+        "max_abs_bias_minutes": 13.327507057390733,
+        "gate_min": 1.6947112788485639e-31,
+        "gate_max": 0.9999999999999928
+      },
+      "gradient_audit": {
+        "min_cosine": 0.9999914756722218,
+        "median_cosine": 0.9999999991444251,
+        "all_pass_cosine": true,
+        "n_draws": 20,
+        "seconds": 87.03091112477705,
+        "draws": [
+          {
+            "draw": 0,
+            "cosine_similarity": 0.9999999998426965,
+            "ad_norm": 697.5816538910781,
+            "fd_norm": 697.5729461428064,
+            "pass_cosine": true
+          },
+          {
+            "draw": 1,
+            "cosine_similarity": 0.999999996242321,
+            "ad_norm": 233.84603738529077,
+            "fd_norm": 233.9030064506471,
+            "pass_cosine": true
+          },
+          {
+            "draw": 2,
+            "cosine_similarity": 0.9999914756722218,
+            "ad_norm": 454.85407281576806,
+            "fd_norm": 448.3120877972428,
+            "pass_cosine": true
+          },
+          {
+            "draw": 3,
+            "cosine_similarity": 0.9999999989559306,
+            "ad_norm": 425.66678338239086,
+            "fd_norm": 425.6316649610259,
+            "pass_cosine": true
+          },
+          {
+            "draw": 4,
+            "cosine_similarity": 0.9999999999586641,
+            "ad_norm": 456.48676346757185,
+            "fd_norm": 456.4970280303288,
+            "pass_cosine": true
+          },
+          {
+            "draw": 5,
+            "cosine_similarity": 0.9999980992430375,
+            "ad_norm": 88.14314742885503,
+            "fd_norm": 88.18929035493275,
+            "pass_cosine": true
+          },
+          {
+            "draw": 6,
+            "cosine_similarity": 0.9999999993329194,
+            "ad_norm": 320.53158435407687,
+            "fd_norm": 320.55675090682826,
+            "pass_cosine": true
+          },
+          {
+            "draw": 7,
+            "cosine_similarity": 0.9999999999335345,
+            "ad_norm": 100.95360534740902,
+            "fd_norm": 100.95606175335364,
+            "pass_cosine": true
+          },
+          {
+            "draw": 8,
+            "cosine_similarity": 0.9999999993391882,
+            "ad_norm": 95.0606658704146,
+            "fd_norm": 95.06992331400167,
+            "pass_cosine": true
+          },
+          {
+            "draw": 9,
+            "cosine_similarity": 0.9999999998007345,
+            "ad_norm": 146.61625839871024,
+            "fd_norm": 146.62312492491222,
+            "pass_cosine": true
+          },
+          {
+            "draw": 10,
+            "cosine_similarity": 0.9999999956202865,
+            "ad_norm": 356.2928563801584,
+            "fd_norm": 356.30537466486015,
+            "pass_cosine": true
+          },
+          {
+            "draw": 11,
+            "cosine_similarity": 0.9999999981256614,
+            "ad_norm": 232.77154356068252,
+            "fd_norm": 232.7855911236333,
+            "pass_cosine": true
+          },
+          {
+            "draw": 12,
+            "cosine_similarity": 0.9999998742119909,
+            "ad_norm": 127.18586908509081,
+            "fd_norm": 126.99031888074914,
+            "pass_cosine": true
+          },
+          {
+            "draw": 13,
+            "cosine_similarity": 0.9999999995615072,
+            "ad_norm": 391.11141961111963,
+            "fd_norm": 391.0770893615853,
+            "pass_cosine": true
+          },
+          {
+            "draw": 14,
+            "cosine_similarity": 0.9999999999664125,
+            "ad_norm": 106.3281254049013,
+            "fd_norm": 106.32897678629536,
+            "pass_cosine": true
+          },
+          {
+            "draw": 15,
+            "cosine_similarity": 0.999999997703657,
+            "ad_norm": 216.89391245489261,
+            "fd_norm": 216.86411963292582,
+            "pass_cosine": true
+          },
+          {
+            "draw": 16,
+            "cosine_similarity": 0.9999999998880729,
+            "ad_norm": 204.1395398676013,
+            "fd_norm": 204.14747840266267,
+            "pass_cosine": true
+          },
+          {
+            "draw": 17,
+            "cosine_similarity": 0.9999999985580227,
+            "ad_norm": 202.2065413153381,
+            "fd_norm": 202.17611373303453,
+            "pass_cosine": true
+          },
+          {
+            "draw": 18,
+            "cosine_similarity": 0.9999999999913244,
+            "ad_norm": 231.26466784233452,
+            "fd_norm": 231.26659506933757,
+            "pass_cosine": true
+          },
+          {
+            "draw": 19,
+            "cosine_similarity": 0.999999997715643,
+            "ad_norm": 298.21055310030283,
+            "fd_norm": 298.23553917750485,
+            "pass_cosine": true
+          }
+        ]
+      },
+      "bias_ok": false,
+      "cosine_ok": true,
+      "acceptable": false
+    },
+    {
+      "tau_gate": 0.5,
+      "fixed_step_size": 0.01,
+      "dt_over_tau_gate": 0.02,
+      "bias": {
+        "hard_t_on": 15.460000000000008,
+        "hard_t_off": 23.400000000000006,
+        "analytic_t_on": 15.45808339658702,
+        "analytic_t_off": 23.397764713282534,
+        "soft_t_on": 16.142103896827095,
+        "soft_t_off": 23.965814821850827,
+        "bias_on_minutes": 40.92623380962522,
+        "bias_off_minutes": 33.9488893110493,
+        "max_abs_bias_minutes": 40.92623380962522,
+        "gate_min": 7.937961057463454e-14,
+        "gate_max": 0.9999996589532641
+      },
+      "gradient_audit": {
+        "min_cosine": 0.9999850246869931,
+        "median_cosine": 0.9999999998864147,
+        "all_pass_cosine": true,
+        "n_draws": 20,
+        "seconds": 38.612216542009264,
+        "draws": [
+          {
+            "draw": 0,
+            "cosine_similarity": 0.9999999987023074,
+            "ad_norm": 111.35660197703159,
+            "fd_norm": 111.3531742301896,
+            "pass_cosine": true
+          },
+          {
+            "draw": 1,
+            "cosine_similarity": 0.9999999964002629,
+            "ad_norm": 583.4875389739477,
+            "fd_norm": 583.6262590984305,
+            "pass_cosine": true
+          },
+          {
+            "draw": 2,
+            "cosine_similarity": 0.9999850246869931,
+            "ad_norm": 1386.9189233440939,
+            "fd_norm": 1369.1571235448316,
+            "pass_cosine": true
+          },
+          {
+            "draw": 3,
+            "cosine_similarity": 0.9999999999375113,
+            "ad_norm": 468.0851617840882,
+            "fd_norm": 468.0765151426437,
+            "pass_cosine": true
+          },
+          {
+            "draw": 4,
+            "cosine_similarity": 0.9999999997548057,
+            "ad_norm": 145.9662864157989,
+            "fd_norm": 145.9630493222479,
+            "pass_cosine": true
+          },
+          {
+            "draw": 5,
+            "cosine_similarity": 0.9999999999702816,
+            "ad_norm": 222.19535931853198,
+            "fd_norm": 222.19951026818845,
+            "pass_cosine": true
+          },
+          {
+            "draw": 6,
+            "cosine_similarity": 0.9999999991998308,
+            "ad_norm": 244.25044102622397,
+            "fd_norm": 244.23749459834258,
+            "pass_cosine": true
+          },
+          {
+            "draw": 7,
+            "cosine_similarity": 0.999999999998257,
+            "ad_norm": 223.17349994224924,
+            "fd_norm": 223.17331537168448,
+            "pass_cosine": true
+          },
+          {
+            "draw": 8,
+            "cosine_similarity": 0.9999999999868262,
+            "ad_norm": 130.7263175476622,
+            "fd_norm": 130.72468824383168,
+            "pass_cosine": true
+          },
+          {
+            "draw": 9,
+            "cosine_similarity": 0.9999999999957873,
+            "ad_norm": 629.2220640477278,
+            "fd_norm": 629.2187726455014,
+            "pass_cosine": true
+          },
+          {
+            "draw": 10,
+            "cosine_similarity": 0.9999999999035589,
+            "ad_norm": 265.8106156347351,
+            "fd_norm": 265.80466493220734,
+            "pass_cosine": true
+          },
+          {
+            "draw": 11,
+            "cosine_similarity": 0.9999999994464924,
+            "ad_norm": 182.74092951031994,
+            "fd_norm": 182.73477899836425,
+            "pass_cosine": true
+          },
+          {
+            "draw": 12,
+            "cosine_similarity": 0.9999999991957207,
+            "ad_norm": 200.41077682460747,
+            "fd_norm": 200.39494629296863,
+            "pass_cosine": true
+          },
+          {
+            "draw": 13,
+            "cosine_similarity": 0.9999999999815563,
+            "ad_norm": 412.7398321290587,
+            "fd_norm": 412.7359937761083,
+            "pass_cosine": true
+          },
+          {
+            "draw": 14,
+            "cosine_similarity": 0.9999999999971035,
+            "ad_norm": 45.27694328318736,
+            "fd_norm": 45.2767736429493,
+            "pass_cosine": true
+          },
+          {
+            "draw": 15,
+            "cosine_similarity": 0.9999999998317237,
+            "ad_norm": 114.72433305668086,
+            "fd_norm": 114.72697505690643,
+            "pass_cosine": true
+          },
+          {
+            "draw": 16,
+            "cosine_similarity": 0.9999999998692706,
+            "ad_norm": 191.61097250035152,
+            "fd_norm": 191.61978670241197,
+            "pass_cosine": true
+          },
+          {
+            "draw": 17,
+            "cosine_similarity": 0.9999999998650825,
+            "ad_norm": 138.86508119495954,
+            "fd_norm": 138.8617272211434,
+            "pass_cosine": true
+          },
+          {
+            "draw": 18,
+            "cosine_similarity": 0.9999999999930697,
+            "ad_norm": 25.096835352369652,
+            "fd_norm": 25.09686819327407,
+            "pass_cosine": true
+          },
+          {
+            "draw": 19,
+            "cosine_similarity": 0.9999999999806911,
+            "ad_norm": 300.93172022829356,
+            "fd_norm": 300.9345114478714,
+            "pass_cosine": true
+          }
+        ]
+      },
+      "bias_ok": false,
+      "cosine_ok": true,
+      "acceptable": false
+    }
+  ],
+  "any_acceptable": false,
+  "recommendation": null,
+  "logit_gate_justified": true
+}

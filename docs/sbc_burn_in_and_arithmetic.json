@@ -1,0 +1,118 @@
+{
+  "burn_in_invariance": [
+    {
+      "tau_gate": 0.5,
+      "retained_hours": 24.0,
+      "burn_in_hours": 48.0,
+      "max_transition_delta_hours": 0.7571232258758087,
+      "labels_identical": false,
+      "comparable": true,
+      "pass": false
+    },
+    {
+      "tau_gate": 0.5,
+      "retained_hours": 24.0,
+      "burn_in_hours": 72.0,
+      "max_transition_delta_hours": 0.09922411263641173,
+      "labels_identical": false,
+      "comparable": true,
+      "pass": false
+    },
+    {
+      "tau_gate": 0.5,
+      "retained_hours": 24.0,
+      "burn_in_hours": 96.0,
+      "max_transition_delta_hours": 0.009109154585173584,
+      "labels_identical": true,
+      "comparable": true,
+      "pass": true
+    },
+    {
+      "tau_gate": 0.5,
+      "retained_hours": 48.0,
+      "burn_in_hours": 48.0,
+      "max_transition_delta_hours": 0.7571232258758087,
+      "labels_identical": false,
+      "comparable": true,
+      "pass": false
+    },
+    {
+      "tau_gate": 0.5,
+      "retained_hours": 48.0,
+      "burn_in_hours": 72.0,
+      "max_transition_delta_hours": 0.09922411263641173,
+      "labels_identical": false,
+      "comparable": true,
+      "pass": false
+    },
+    {
+      "tau_gate": 0.5,
+      "retained_hours": 48.0,
+      "burn_in_hours": 96.0,
+      "max_transition_delta_hours": 0.009109154585173584,
+      "labels_identical": true,
+      "comparable": true,
+      "pass": true
+    }
+  ],
+  "shortest_pass_by_retained": {
+    "24.0": 96.0,
+    "48.0": 96.0
+  },
+  "sbc_arithmetic": [
+    {
+      "retained": 48,
+      "burn_in": 96,
+      "total_h": 144,
+      "est_s_per_iter": 91,
+      "hours_per_replicate_250iter": 6.32,
+      "replicates_per_24h": 3.8
+    },
+    {
+      "retained": 24,
+      "burn_in": 96,
+      "total_h": 120,
+      "est_s_per_iter": 76,
+      "hours_per_replicate_250iter": 5.28,
+      "replicates_per_24h": 4.5
+    },
+    {
+      "retained": 24,
+      "burn_in": 48,
+      "total_h": 72,
+      "est_s_per_iter": 46,
+      "hours_per_replicate_250iter": 3.19,
+      "replicates_per_24h": 7.5
+    },
+    {
+      "retained": 48,
+      "burn_in": 72,
+      "total_h": 120,
+      "est_s_per_iter": 75.8,
+      "hours_per_replicate_250iter": 5.27,
+      "replicates_per_24h": 4.6
+    },
+    {
+      "retained": 48,
+      "burn_in": 48,
+      "total_h": 96,
+      "est_s_per_iter": 60.7,
+      "hours_per_replicate_250iter": 4.21,
+      "replicates_per_24h": 5.7
+    }
+  ],
+  "decision_note": "Accumulate 10\u201315 replicates across three nights at 200 warmup + 50 draws (~3\u20134/night at 48 h retained + 96 h burn-in). Cutting to 200+50 is already the RUN-009 shape; further cutting warmup risks the \u03b5-recovery window after iter 100. Do not reduce burn-in: 48/72 h fail IC invariance at \u03c4_g=0.5.",
+  "decision": {
+    "burn_in_hours_required": 96.0,
+    "retained_hours_tested": [
+      24.0,
+      48.0
+    ],
+    "shorter_burn_in_passes": false,
+    "binding_lever": "burn-in (96 h), not retained length",
+    "replicates_per_24h_at_250_iter_48plus96": 3.8,
+    "chosen_strategy_if_sbc_unblocked": "Accumulate 10\u201315 replicates across three nights at 200 warmup + 50 draws (~3\u20134/night at 48 h retained + 96 h burn-in). Cutting to 200+50 is already the RUN-009 shape; further cutting warmup risks the \u03b5-recovery window after iter 100. Do not reduce burn-in: 48/72 h fail IC invariance at \u03c4_g=0.5.",
+    "sbc_blocked_by_transition_bias": true,
+    "block_reason": "RUN-009 soft empirical (t_on,t_off) biased +33/+21 min vs hard oracle; oracle outside 90% intervals. Need \u03c4_g=0.2 at dt=0.005 before SBC."
+  }
+}

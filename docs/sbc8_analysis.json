@@ -1,0 +1,577 @@
+{
+  "date": "2026-08-11",
+  "campaign": "SBC-8",
+  "n_replicates": 8,
+  "seed_base": 20260808,
+  "writeup": "docs/sbc.md",
+  "headline_replicate_7": {
+    "ess_bulk_min": 1.5847597222083516,
+    "tree_depth_saturation_fraction": 0.95,
+    "tau_posterior_sd": 0.24279199398326168,
+    "contraction_tau": 0.995888071262091,
+    "rank_tau": 0.0,
+    "rank_phase": 0.0,
+    "divergences": 0,
+    "reading": "Confidently wrong posterior: stuck in a narrow fibre pocket (ESS_min=1.58 on chi_sleep, depth sat 0.95, tau sd 0.24 h, contraction\u22481). ESS(tau)=14.2 measures local mixing within that pocket, not exploration.",
+    "ess_tau": 14.225402414646982,
+    "ess_bulk_min_site": "chi_sleep",
+    "ess_tau_vs_ess_min_tension": "Resolved as local-within-pocket mixing; depth saturation supports non-exploration."
+  },
+  "summary": {
+    "ess_bulk_min_mean": 6.613762184432281,
+    "ess_bulk_min_range": [
+      1.5847597222083516,
+      16.33951115063756
+    ],
+    "ess_tau_range": [
+      5.720280613346207,
+      37.425922080086096
+    ],
+    "tau_posterior_sd_range": [
+      0.24279199398326168,
+      4.310017486206604
+    ],
+    "mean_depth_saturation": 0.575,
+    "total_divergences": 9,
+    "mean_wall_hours": 3.774575433491021
+  },
+  "correlations": {
+    "note": "Primary ESS\u2013\u03c4 claim is against generating_parameters.tau, not posterior sd(\u03c4). The r\u22480.07 figure was the latter and is retained only as a correction note.",
+    "ess_min_vs_generating_tau": {
+      "pearson_r": -0.6625365830109933,
+      "pearson_p": 0.07340146911836169,
+      "spearman_rho": -0.6904761904761906,
+      "spearman_p": 0.057990318164572716
+    },
+    "ess_tau_vs_generating_tau": {
+      "pearson_r": -0.7778309585817482,
+      "pearson_p": 0.023050030112769564,
+      "spearman_rho": -0.6666666666666669,
+      "spearman_p": 0.07098765432098751
+    },
+    "ess_min_vs_generating_tau_partial_amplitude": {
+      "pearson_r": -0.6374430753202308,
+      "pearson_p": 0.08909508664362216,
+      "spearman_rho": -0.5714285714285715,
+      "spearman_p": 0.13895995716070667
+    },
+    "ess_tau_vs_generating_tau_partial_amplitude": {
+      "pearson_r": -0.7606877731231474,
+      "pearson_p": 0.028408279385519784,
+      "spearman_rho": -0.5476190476190477,
+      "spearman_p": 0.1600256425388966
+    },
+    "ess_tau_vs_posterior_sd_tau_WRONG_TARGET": {
+      "pearson_r": 0.07007250818044194,
+      "pearson_p": 0.8690434973465436,
+      "spearman_rho": 0.04761904761904763,
+      "spearman_p": 0.9108491685195836
+    },
+    "ess_min_vs_amplitude": {
+      "pearson_r": 0.24238797043527813,
+      "pearson_p": 0.5630097541768396,
+      "spearman_rho": 0.11904761904761905,
+      "spearman_p": 0.7788857260523797
+    },
+    "generating_tau_vs_amplitude": {
+      "pearson_r": -0.4305810991117999,
+      "pearson_p": 0.28689748616620253,
+      "spearman_rho": -0.3333333333333334,
+      "spearman_p": 0.4197530864197531
+    },
+    "mechanism": "CONJECTURE: larger |tau-24| increases circadian correction and fibre curvature; depth-capped leapfrog pays for curvature more than length. Not tested against leverage/SVD."
+  },
+  "decision_ess_tau": "Keep negative ESS\u2013generating-\u03c4 association, caveated at n=8. Drop any claim based on r=0.07 against posterior sd(\u03c4).",
+  "rank_summary": {
+    "tau": {
+      "raw": [
+        0.57,
+        0.85,
+        0.0,
+        0.01,
+        0.03,
+        0.79,
+        0.62,
+        0.0
+      ],
+      "thinned": [
+        0.3333333333333333,
+        0.8571428571428571,
+        0.0,
+        0.03333333333333333,
+        0.02702702702702703,
+        0.7692307692307693,
+        0.8,
+        0.0
+      ],
+      "n_in_0p05_0p95_raw": 4,
+      "n_in_0p05_0p95_thinned": 4
+    },
+    "chi_wake": {
+      "raw": [
+        0.26,
+        0.97,
+        0.0,
+        0.08,
+        0.0,
+        0.34,
+        0.85,
+        0.0
+      ],
+      "thinned": [
+        0.27906976744186046,
+        1.0,
+        0.0,
+        0.041666666666666664,
+        0.0,
+        0.38636363636363635,
+        0.8181818181818182,
+        0.0
+      ],
+      "n_in_0p05_0p95_raw": 4,
+      "n_in_0p05_0p95_thinned": 3
+    },
+    "chi_sleep": {
+      "raw": [
+        0.83,
+        1.0,
+        0.98,
+        0.22,
+        0.12,
+        0.12,
+        0.92,
+        1.0
+      ],
+      "thinned": [
+        0.825,
+        1.0,
+        0.95,
+        0.17857142857142858,
+        0.12195121951219512,
+        0.18181818181818182,
+        0.9393939393939394,
+        1.0
+      ],
+      "n_in_0p05_0p95_raw": 5,
+      "n_in_0p05_0p95_thinned": 5
+    },
+    "phase": {
+      "raw": [
+        0.53,
+        0.1,
+        0.11,
+        0.98,
+        1.0,
+        0.24,
+        0.38,
+        0.0
+      ],
+      "thinned": [
+        0.6666666666666666,
+        0.0,
+        0.14285714285714285,
+        0.9375,
+        1.0,
+        0.3333333333333333,
+        0.0,
+        0.0
+      ],
+      "n_in_0p05_0p95_raw": 5,
+      "n_in_0p05_0p95_thinned": 4
+    },
+    "amplitude_fraction": {
+      "raw": [
+        0.24,
+        0.04,
+        0.52,
+        0.44,
+        0.52,
+        0.49,
+        0.51,
+        1.0
+      ],
+      "thinned": [
+        0.20689655172413793,
+        0.0,
+        0.46153846153846156,
+        0.5625,
+        0.4807692307692308,
+        0.5,
+        0.5333333333333333,
+        1.0
+      ],
+      "n_in_0p05_0p95_raw": 6,
+      "n_in_0p05_0p95_thinned": 6
+    }
+  },
+  "replicates": [
+    {
+      "replicate": 0,
+      "seed": 20260808,
+      "ess_bulk_min": 3.0615694164249607,
+      "ess_bulk": {
+        "phase_z1": 3.0615694164249607,
+        "phase_z2": 14.761951798931005,
+        "excursion_fraction": 3.6764964885887728,
+        "amplitude_fraction": 29.078945700528852,
+        "chi_sleep": 40.11624415098858,
+        "chi_wake": 43.81464720630003,
+        "tau": 6.097510547014405
+      },
+      "divergences": 0,
+      "tree_depth_saturation_fraction": 0.45,
+      "wall_hours": 3.3975095566897653,
+      "tau_true": 21.842967328268088,
+      "amplitude_true": 0.10639602189380629,
+      "tau_posterior_mean": 21.117179816313474,
+      "tau_posterior_sd": 2.865899779754292,
+      "tau_abs_error": 0.7257875119546142,
+      "phase_circular_sd_hours": 0.9407121992077587,
+      "contraction": {
+        "chi_sleep": 0.46975517061995864,
+        "chi_wake": 0.6916639044032233,
+        "amplitude": 0.28500291363249364,
+        "tau": 0.5603549470084628,
+        "threshold_gap": 0.06177418334404994
+      },
+      "ranks": {
+        "tau": 0.57,
+        "chi_wake": 0.26,
+        "chi_sleep": 0.83,
+        "phase": 0.53,
+        "amplitude_fraction": 0.24
+      },
+      "ranks_thinned": {
+        "tau": 0.3333333333333333,
+        "chi_wake": 0.27906976744186046,
+        "chi_sleep": 0.825,
+        "phase": 0.6666666666666666,
+        "amplitude_fraction": 0.20689655172413793
+      },
+      "n_extreme_ranks_leq_0p05": 0,
+      "true_transition_count": 2
+    },
+    {
+      "replicate": 1,
+      "seed": 20260809,
+      "ess_bulk_min": 2.2511049468145394,
+      "ess_bulk": {
+        "phase_z1": 43.29217576976468,
+        "phase_z2": 7.247872486946933,
+        "excursion_fraction": 10.835959457301186,
+        "amplitude_fraction": 2.2511049468145394,
+        "chi_sleep": 5.608459380153653,
+        "chi_wake": 15.615881175099936,
+        "tau": 7.781928544662355
+      },
+      "divergences": 0,
+      "tree_depth_saturation_fraction": 0.56,
+      "wall_hours": 3.6506946564006566,
+      "tau_true": 26.859118327190732,
+      "amplitude_true": 0.07498795118815806,
+      "tau_posterior_mean": 20.86737538968841,
+      "tau_posterior_sd": 4.310017486206604,
+      "tau_abs_error": 5.991742937502323,
+      "phase_circular_sd_hours": 2.2970653540560106,
+      "contraction": {
+        "chi_sleep": 0.5222551856408693,
+        "chi_wake": 0.3827968951926215,
+        "amplitude": 0.24198027137783973,
+        "tau": -0.04558967827614713,
+        "threshold_gap": 0.161858840034935
+      },
+      "ranks": {
+        "tau": 0.85,
+        "chi_wake": 0.97,
+        "chi_sleep": 1.0,
+        "phase": 0.1,
+        "amplitude_fraction": 0.04
+      },
+      "ranks_thinned": {
+        "tau": 0.8571428571428571,
+        "chi_wake": 1.0,
+        "chi_sleep": 1.0,
+        "phase": 0.0,
+        "amplitude_fraction": 0.0
+      },
+      "n_extreme_ranks_leq_0p05": 2,
+      "true_transition_count": 2
+    },
+    {
+      "replicate": 2,
+      "seed": 20260810,
+      "ess_bulk_min": 7.148184329119583,
+      "ess_bulk": {
+        "phase_z1": 9.200509957082259,
+        "phase_z2": 7.148184329119583,
+        "excursion_fraction": 8.55657053219054,
+        "amplitude_fraction": 13.457562470638724,
+        "chi_sleep": 20.411252249032135,
+        "chi_wake": 22.56114639021614,
+        "tau": 14.531024401829987
+      },
+      "divergences": 2,
+      "tree_depth_saturation_fraction": 0.74,
+      "wall_hours": 4.11371741304394,
+      "tau_true": 24.802758725839674,
+      "amplitude_true": 0.08347315401531853,
+      "tau_posterior_mean": 47.37197795979532,
+      "tau_posterior_sd": 3.304679112901631,
+      "tau_abs_error": 22.56921923395565,
+      "phase_circular_sd_hours": 0.6833895446829735,
+      "contraction": {
+        "chi_sleep": 0.483372279322295,
+        "chi_wake": -0.32337929758383566,
+        "amplitude": 0.6350791649843739,
+        "tau": 0.41985808806664626,
+        "threshold_gap": 0.4625535811237167
+      },
+      "ranks": {
+        "tau": 0.0,
+        "chi_wake": 0.0,
+        "chi_sleep": 0.98,
+        "phase": 0.11,
+        "amplitude_fraction": 0.52
+      },
+      "ranks_thinned": {
+        "tau": 0.0,
+        "chi_wake": 0.0,
+        "chi_sleep": 0.95,
+        "phase": 0.14285714285714285,
+        "amplitude_fraction": 0.46153846153846156
+      },
+      "n_extreme_ranks_leq_0p05": 4,
+      "true_transition_count": 2
+    },
+    {
+      "replicate": 3,
+      "seed": 20260811,
+      "ess_bulk_min": 16.33951115063756,
+      "ess_bulk": {
+        "phase_z1": 33.41106724749433,
+        "phase_z2": 31.2553044764353,
+        "excursion_fraction": 19.456425738517982,
+        "amplitude_fraction": 16.33951115063756,
+        "chi_sleep": 28.878108008515664,
+        "chi_wake": 24.424125615290645,
+        "tau": 30.630157611844062
+      },
+      "divergences": 2,
+      "tree_depth_saturation_fraction": 0.42,
+      "wall_hours": 3.609645598425866,
+      "tau_true": 21.816478973395533,
+      "amplitude_true": 0.12819151042591803,
+      "tau_posterior_mean": 26.79785799317456,
+      "tau_posterior_sd": 2.634804160974942,
+      "tau_abs_error": 4.981379019779027,
+      "phase_circular_sd_hours": 0.7611845675391854,
+      "contraction": {
+        "chi_sleep": 0.2949373263075483,
+        "chi_wake": 0.5581048207186985,
+        "amplitude": 0.12303899510538685,
+        "tau": 0.704623260365088,
+        "threshold_gap": 0.6851274701642918
+      },
+      "ranks": {
+        "tau": 0.01,
+        "chi_wake": 0.08,
+        "chi_sleep": 0.22,
+        "phase": 0.98,
+        "amplitude_fraction": 0.44
+      },
+      "ranks_thinned": {
+        "tau": 0.03333333333333333,
+        "chi_wake": 0.041666666666666664,
+        "chi_sleep": 0.17857142857142858,
+        "phase": 0.9375,
+        "amplitude_fraction": 0.5625
+      },
+      "n_extreme_ranks_leq_0p05": 4,
+      "true_transition_count": 2
+    },
+    {
+      "replicate": 4,
+      "seed": 20260812,
+      "ess_bulk_min": 14.186826509885254,
+      "ess_bulk": {
+        "phase_z1": 24.741414234001248,
+        "phase_z2": 14.186826509885254,
+        "excursion_fraction": 40.95036035548858,
+        "amplitude_fraction": 52.3623466618275,
+        "chi_sleep": 41.66383944226621,
+        "chi_wake": 55.90374569816374,
+        "tau": 37.425922080086096
+      },
+      "divergences": 0,
+      "tree_depth_saturation_fraction": 0.56,
+      "wall_hours": 3.739299330474395,
+      "tau_true": 17.041598632378452,
+      "amplitude_true": 0.10794028726399296,
+      "tau_posterior_mean": 23.19538097723655,
+      "tau_posterior_sd": 3.6584616304724737,
+      "tau_abs_error": 6.153782344858097,
+      "phase_circular_sd_hours": 1.4525446310592114,
+      "contraction": {
+        "chi_sleep": 0.6047396761374482,
+        "chi_wake": 0.6981971726082143,
+        "amplitude": 0.3784147227054252,
+        "tau": 0.5245005728154899,
+        "threshold_gap": 0.3495885310180873
+      },
+      "ranks": {
+        "tau": 0.03,
+        "chi_wake": 0.0,
+        "chi_sleep": 0.12,
+        "phase": 1.0,
+        "amplitude_fraction": 0.52
+      },
+      "ranks_thinned": {
+        "tau": 0.02702702702702703,
+        "chi_wake": 0.0,
+        "chi_sleep": 0.12195121951219512,
+        "phase": 1.0,
+        "amplitude_fraction": 0.4807692307692308
+      },
+      "n_extreme_ranks_leq_0p05": 3,
+      "true_transition_count": 2
+    },
+    {
+      "replicate": 5,
+      "seed": 20260813,
+      "ess_bulk_min": 6.092248850405684,
+      "ess_bulk": {
+        "phase_z1": 21.429742673886494,
+        "phase_z2": 9.44490076636224,
+        "excursion_fraction": 6.092248850405684,
+        "amplitude_fraction": 12.849408522090842,
+        "chi_sleep": 22.274579362951968,
+        "chi_wake": 44.9421233849567,
+        "tau": 13.537564396785791
+      },
+      "divergences": 1,
+      "tree_depth_saturation_fraction": 0.73,
+      "wall_hours": 3.851679269189998,
+      "tau_true": 21.93369066928374,
+      "amplitude_true": 0.14063195116249821,
+      "tau_posterior_mean": 20.33057164693409,
+      "tau_posterior_sd": 2.531474311004103,
+      "tau_abs_error": 1.6031190223496523,
+      "phase_circular_sd_hours": 0.943217297248459,
+      "contraction": {
+        "chi_sleep": 0.373411515886368,
+        "chi_wake": 0.649616984662343,
+        "amplitude": -0.036426106172338324,
+        "tau": 0.6057625717280588,
+        "threshold_gap": 0.3766147593185294
+      },
+      "ranks": {
+        "tau": 0.79,
+        "chi_wake": 0.34,
+        "chi_sleep": 0.12,
+        "phase": 0.24,
+        "amplitude_fraction": 0.49
+      },
+      "ranks_thinned": {
+        "tau": 0.7692307692307693,
+        "chi_wake": 0.38636363636363635,
+        "chi_sleep": 0.18181818181818182,
+        "phase": 0.3333333333333333,
+        "amplitude_fraction": 0.5
+      },
+      "n_extreme_ranks_leq_0p05": 1,
+      "true_transition_count": 2
+    },
+    {
+      "replicate": 6,
+      "seed": 20260814,
+      "ess_bulk_min": 2.2458925499623157,
+      "ess_bulk": {
+        "phase_z1": 9.098111577627897,
+        "phase_z2": 7.590627078823642,
+        "excursion_fraction": 2.2458925499623157,
+        "amplitude_fraction": 15.821721964790392,
+        "chi_sleep": 33.081031009569465,
+        "chi_wake": 22.997343392394605,
+        "tau": 5.720280613346207
+      },
+      "divergences": 4,
+      "tree_depth_saturation_fraction": 0.19,
+      "wall_hours": 3.2238526219443884,
+      "tau_true": 27.605621944593636,
+      "amplitude_true": 0.1079738562122578,
+      "tau_posterior_mean": 26.613902953537387,
+      "tau_posterior_sd": 2.8536399578761875,
+      "tau_abs_error": 0.9917189910562492,
+      "phase_circular_sd_hours": 1.1221834393407875,
+      "contraction": {
+        "chi_sleep": 0.5755263809099493,
+        "chi_wake": 0.6161659831836755,
+        "amplitude": 0.011495052997398614,
+        "tau": 0.634696763165923,
+        "threshold_gap": 0.35997343050436437
+      },
+      "ranks": {
+        "tau": 0.62,
+        "chi_wake": 0.85,
+        "chi_sleep": 0.92,
+        "phase": 0.38,
+        "amplitude_fraction": 0.51
+      },
+      "ranks_thinned": {
+        "tau": 0.8,
+        "chi_wake": 0.8181818181818182,
+        "chi_sleep": 0.9393939393939394,
+        "phase": 0.0,
+        "amplitude_fraction": 0.5333333333333333
+      },
+      "n_extreme_ranks_leq_0p05": 0,
+      "true_transition_count": 2
+    },
+    {
+      "replicate": 7,
+      "seed": 20260815,
+      "ess_bulk_min": 1.5847597222083516,
+      "ess_bulk": {
+        "phase_z1": 3.8651330537931474,
+        "phase_z2": 5.8922502031493975,
+        "excursion_fraction": 27.708133729407237,
+        "amplitude_fraction": 7.408222112481477,
+        "chi_sleep": 1.5847597222083516,
+        "chi_wake": 12.607461085747259,
+        "tau": 14.225402414646982
+      },
+      "divergences": 0,
+      "tree_depth_saturation_fraction": 0.95,
+      "wall_hours": 4.610205021759159,
+      "tau_true": 23.168426107540284,
+      "amplitude_true": 0.12750174439016426,
+      "tau_posterior_mean": 31.98755977224377,
+      "tau_posterior_sd": 0.24279199398326168,
+      "tau_abs_error": 8.819133664703486,
+      "phase_circular_sd_hours": 0.29076208964550254,
+      "contraction": {
+        "chi_sleep": 0.9790055287425454,
+        "chi_wake": 0.9810816476446517,
+        "amplitude": 0.9922993751610889,
+        "tau": 0.995888071262091,
+        "threshold_gap": 0.9945796633577758
+      },
+      "ranks": {
+        "tau": 0.0,
+        "chi_wake": 0.0,
+        "chi_sleep": 1.0,
+        "phase": 0.0,
+        "amplitude_fraction": 1.0
+      },
+      "ranks_thinned": {
+        "tau": 0.0,
+        "chi_wake": 0.0,
+        "chi_sleep": 1.0,
+        "phase": 0.0,
+        "amplitude_fraction": 1.0
+      },
+      "n_extreme_ranks_leq_0p05": 6,
+      "true_transition_count": 2
+    }
+  ]
+}

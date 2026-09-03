@@ -1,0 +1,76 @@
+{
+  "gate": {
+    "p0": 0.5,
+    "tau_gate": 0.15,
+    "k": 650.0,
+    "fixed_step_size": 0.003
+  },
+  "results": [
+    {
+      "burn_in_hours": 24.0,
+      "retained_hours": 48.0,
+      "atol_hours": 0.01,
+      "max_transition_delta_hours": 0.1516721531846983,
+      "labels_identical": true,
+      "comparable_transition_counts": true,
+      "pass": false,
+      "initial_pressures": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "reference_transition_count": 4
+    },
+    {
+      "burn_in_hours": 48.0,
+      "retained_hours": 48.0,
+      "atol_hours": 0.01,
+      "max_transition_delta_hours": 0.007131432839642571,
+      "labels_identical": true,
+      "comparable_transition_counts": true,
+      "pass": true,
+      "initial_pressures": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "reference_transition_count": 4
+    },
+    {
+      "burn_in_hours": 72.0,
+      "retained_hours": 48.0,
+      "atol_hours": 0.01,
+      "max_transition_delta_hours": 0.0005967856884598888,
+      "labels_identical": true,
+      "comparable_transition_counts": true,
+      "pass": true,
+      "initial_pressures": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "reference_transition_count": 4
+    },
+    {
+      "burn_in_hours": 96.0,
+      "retained_hours": 48.0,
+      "atol_hours": 0.01,
+      "max_transition_delta_hours": 5.0233144721190115e-05,
+      "labels_identical": true,
+      "comparable_transition_counts": true,
+      "pass": true,
+      "initial_pressures": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "reference_transition_count": 4
+    }
+  ],
+  "shortest_pass_hours": 48.0,
+  "note": "96 h was required at \u03c4_g=0.5; a faster gate may admit a shorter burn-in. Shortest pass here is the SBC-relevant saving."
+}

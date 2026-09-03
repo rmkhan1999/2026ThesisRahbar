@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-29",
+  "diagnostics": {
+    "adapted_step_size_by_chain": [
+      0.004835537724664079
+    ],
+    "bfmi_by_chain": [
+      1.4051127947535673
+    ],
+    "diagnostic_variables": [
+      "phase_z1",
+      "phase_z2",
+      "excursion_fraction",
+      "amplitude_fraction",
+      "chi_sleep",
+      "chi_wake",
+      "tau"
+    ],
+    "divergences": 1,
+    "ess_bulk_min": 1.751019429923568,
+    "ess_tail_min": 12.36236566229314,
+    "median_num_steps": 127.0,
+    "phase": {
+      "circular_mean_hours": 15.649373005229586,
+      "circular_sd_hours": 0.03628003004116737
+    },
+    "phase_diagnostics_excluded": true,
+    "rhat_max": null,
+    "total_draws": 50,
+    "tree_depth_saturation_fraction": 0.98
+  },
+  "effective_config_sha256": "22c964807bbdcd24faf7a314bfd314eec49cb1e67419802d8ce254ee2fb024e9",
+  "git": {
+    "commit": "32c70d8",
+    "working_tree_dirty": true
+  },
+  "observed_epochs": 97,
+  "outcome": "diverged",
+  "run_id": "RUN-009",
+  "sampler": {
+    "burn_in_hours": 96.0,
+    "chain_method": "sequential",
+    "chains": 1,
+    "dense_mass": true,
+    "design": "entrained",
+    "draws": 50,
+    "fixed_misclassification": 0.01,
+    "init_strategy": "init_to_median",
+    "max_tree_depth": 7,
+    "retained_hours": 48.0,
+    "sampled_parameters": [
+      "phase_z1",
+      "phase_z2",
+      "excursion_fraction",
+      "amplitude_fraction",
+      "chi_sleep",
+      "chi_wake"
+    ],
+    "target_accept_prob": 0.8,
+    "thread_stack_bytes": 268435456,
+    "warmup": 200
+  },
+  "seed": 0,
+  "source_snapshot_sha256": "a77366de9523646b32ee324294230dff5283a407eb8d2aac6ad9210dc103afa6",
+  "timings": {
+    "compile_seconds": 9.267751166597009,
+    "compile_seconds_by_chain": [
+      9.267751166597009
+    ],
+    "data_generation_seconds": 1.3450561668723822,
+    "gradient_compile_seconds": 2.559821667149663,
+    "gradient_max_seconds": 0.752205042168498,
+    "gradient_mean_seconds": 0.7469171999953688,
+    "gradient_median_seconds": 0.7467179580125958,
+    "gradient_min_seconds": 0.7408300000242889,
+    "gradient_repeats": 10.0,
+    "sampling_seconds": 4524.665776540991,
+    "sampling_seconds_by_chain": [
+      4524.665776540991
+    ],
+    "warmup_seconds": 16068.396394290961,
+    "warmup_seconds_by_chain": [
+      16068.396394290961
+    ]
+  }
+}

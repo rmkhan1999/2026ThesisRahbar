@@ -1,0 +1,70 @@
+{
+  "adapt_state_path": "adapt_state.npz",
+  "date": "2026-08-09",
+  "diagnostics": {
+    "adapted_step_size_by_chain": [
+      0.007310197633184206
+    ],
+    "bfmi_by_chain": [
+      1.4995504348194795
+    ],
+    "diagnostic_variables": [
+      "phase_z1",
+      "phase_z2",
+      "excursion_fraction",
+      "amplitude_fraction",
+      "chi_sleep",
+      "chi_wake",
+      "tau"
+    ],
+    "divergences": 0,
+    "ess_bulk_min": 1.4834845987262268,
+    "ess_tail_min": 12.122583565009379,
+    "median_num_steps": 1023.0,
+    "phase": {
+      "circular_mean_hours": 0.021200870623015084,
+      "circular_sd_hours": 0.21226760699289013
+    },
+    "phase_diagnostics_excluded": true,
+    "rhat_max": null,
+    "total_draws": 50,
+    "tree_depth_saturation_fraction": 0.82
+  },
+  "effective_config_sha256": "665b2402774c8c125ae5d18c8a7f960a2c02c4f52571bb2788efc65e00528043",
+  "git": {
+    "commit": "40c2f2f",
+    "working_tree_dirty": true
+  },
+  "outcome": "completed",
+  "run_id": "RUN-013",
+  "sampler": {
+    "adjoint_checkpoints": 180,
+    "adjoint_mode": "recursive_checkpoint",
+    "burn_in_hours": 48.0,
+    "chains": 1,
+    "dense_mass": true,
+    "design": "entrained",
+    "draws": 50,
+    "fixed_misclassification": 0.01,
+    "fixed_step_size": 0.003,
+    "k": 650.0,
+    "max_tree_depth": 10,
+    "p0": 0.5,
+    "retained_hours": 24.0,
+    "tau_gate": 0.15,
+    "warmup": 50
+  },
+  "seed": 0,
+  "timings": {
+    "compile_seconds": 6.067862582858652,
+    "sampling_seconds": 21886.081579790916,
+    "warmup_seconds": 2123.194982541725
+  },
+  "warm_start": {
+    "adapt_mass_matrix": true,
+    "adapt_step_size": false,
+    "note": "RUN-012 lacked adapt_state.npz; froze \u03b5 and re-adapted dense mass. This run writes adapt_state.npz.",
+    "source": "RUN-012",
+    "step_size": 0.007310197633184206
+  }
+}

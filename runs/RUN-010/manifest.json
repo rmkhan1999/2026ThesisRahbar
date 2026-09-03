@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-30",
+  "effective_config_sha256": "8256b91a4b31fd89c0b45a121dd05eb8ea30eff72e02e9a4f94611c61876c9ad",
+  "git": {
+    "commit": "32c70d8",
+    "working_tree_dirty": true
+  },
+  "outcome": "abandoned",
+  "run_id": "RUN-010",
+  "sampler": {
+    "burn_in_hours": 96.0,
+    "chain_method": "sequential",
+    "chains": 1,
+    "dense_mass": true,
+    "design": "entrained",
+    "draws": 200,
+    "fixed_misclassification": 0.01,
+    "fixed_step_size": 0.003,
+    "init_strategy": "init_to_median",
+    "k": 650.0,
+    "max_tree_depth": 9,
+    "p0": 0.5,
+    "retained_hours": 48.0,
+    "sampled_parameters": [
+      "phase_z1",
+      "phase_z2",
+      "excursion_fraction",
+      "amplitude_fraction",
+      "chi_sleep",
+      "chi_wake"
+    ],
+    "target_accept_prob": 0.8,
+    "tau_gate": 0.15,
+    "thread_stack_bytes": 268435456,
+    "warmup": 200
+  },
+  "seed": 0,
+  "source_snapshot_sha256": "72b52afcd57eecca17265d245d697dd6b9ed09b3bcc0c6eefc8827b99c2a635a",
+  "abandon_reason": "Killed at warmup 21/200 after ~6 h wall. Median ~1260 s/iter at max_tree_depth=9, dt=0.003; epsilon collapsed to ~6.5e-6; remaining work projected multi-day. User requested kill 2026-07-30 morning.",
+  "stopped_at": {
+    "phase": "warmup",
+    "iteration": 21,
+    "csv_rows": 21
+  }
+}

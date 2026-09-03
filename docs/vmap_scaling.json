@@ -1,0 +1,502 @@
+{
+  "date": "2026-08-02",
+  "method": "numpyro_chain_method_vectorized_vs_sequential",
+  "note": "Custom jax.vmap harness abandoned after >40 min. Decisive ratio is vectorized-4 / sequential-1.",
+  "n_warmup": 20,
+  "n_samples": 1,
+  "seed": 20260802,
+  "max_tree_depth": 7,
+  "dense_mass": true,
+  "gate": {
+    "p0": 0.5,
+    "tau_gate": 0.15,
+    "k": 650.0,
+    "fixed_step_size": 0.003,
+    "adjoint_mode": "direct",
+    "burn_in_hours": 48.0,
+    "retained_hours": 24.0,
+    "integration_steps": 24000
+  },
+  "sequential_1_pass1": {
+    "chain_method": "sequential",
+    "num_chains": 1,
+    "wall_seconds_including_compile": 1747.094628292136,
+    "num_warmup": 20,
+    "num_samples": 1,
+    "adapted_step_size": 0.0874191525967384
+  },
+  "vectorized_4_pass1": {
+    "chain_method": "vectorized",
+    "num_chains": 4,
+    "wall_seconds_including_compile": 2228.4760454171337,
+    "num_warmup": 20,
+    "num_samples": 1,
+    "adapted_step_size": [
+      0.1656133210400291,
+      0.16888904288872397,
+      0.09268584282068315,
+      0.2838200289944002
+    ]
+  },
+  "sequential_1_pass2": {
+    "chain_method": "sequential",
+    "num_chains": 1,
+    "wall_seconds_including_compile": 1689.5235344171524,
+    "num_warmup": 20,
+    "num_samples": 1,
+    "adapted_step_size": 0.0874191525967384
+  },
+  "vectorized_4_pass2": {
+    "chain_method": "vectorized",
+    "num_chains": 4,
+    "wall_seconds_including_compile": 2241.7750261672772,
+    "num_warmup": 20,
+    "num_samples": 1,
+    "adapted_step_size": [
+      0.1656133210400291,
+      0.16888904288872397,
+      0.09268584282068315,
+      0.2838200289944002
+    ]
+  },
+  "sequential_4": {
+    "chain_method": "sequential",
+    "num_chains": 4,
+    "wall_seconds_including_compile": 6540.926155707799,
+    "num_warmup": 20,
+    "num_samples": 1,
+    "adapted_step_size": [
+      0.0402450609797471,
+      0.02180200389308791,
+      0.04996205077047192,
+      0.053689764437913415
+    ]
+  },
+  "wall_clock_ratio_vectorized4_over_sequential1": 1.481587878164556,
+  "wall_clock_ratio_vectorized4_over_sequential4": 0.34273052054119896,
+  "effective_speedup_vs_serial_4x": 2.9177442336355686,
+  "meaning": "partial_win_usable_for_SBC",
+  "interpretation": "If vectorized-4 \u2248 sequential-1, SBC amortises scan overhead. If vectorized-4 \u2248 4\u00d7 sequential-1, no parallelism.",
+  "date_width_sweep": "2026-08-08",
+  "width_sweep": {
+    "n_warmup": 20,
+    "seed": 20260808,
+    "max_tree_depth": 7,
+    "adjoint_mode": "recursive_checkpoint",
+    "adjoint_checkpoints": 180,
+    "gate": {
+      "p0": 0.5,
+      "tau_gate": 0.15,
+      "k": 650.0,
+      "fixed_step_size": 0.003,
+      "burn_in_hours": 48.0,
+      "retained_hours": 24.0
+    },
+    "sequential_1": {
+      "chain_method": "sequential",
+      "num_chains": 1,
+      "wall_seconds_including_compile": 820.0887352502905,
+      "num_warmup": 20,
+      "num_samples": 1
+    },
+    "vectorized_by_width": [
+      {
+        "chain_method": "vectorized",
+        "num_chains": 4,
+        "wall_seconds_including_compile": 1215.0335291661322,
+        "num_warmup": 20,
+        "num_samples": 1,
+        "ratio_over_sequential1": 1.481587878164556,
+        "wall_per_replicate": 303.75838229153305,
+        "relative_work_vs_seq1_unit": 0.370396969541139
+      },
+      {
+        "chain_method": "vectorized",
+        "num_chains": 8,
+        "wall_seconds_including_compile": 2205.408303000033,
+        "num_warmup": 20,
+        "num_samples": 1,
+        "ratio_over_sequential1": 2.6892313090082185,
+        "wall_per_replicate": 275.6760378750041,
+        "relative_work_vs_seq1_unit": 0.3361539136260273
+      },
+      {
+        "chain_method": "vectorized",
+        "num_chains": 16,
+        "wall_seconds_including_compile": 2654.3921037078835,
+        "num_warmup": 20,
+        "num_samples": 1,
+        "ratio_over_sequential1": 3.2367132843225375,
+        "wall_per_replicate": 165.89950648174272,
+        "relative_work_vs_seq1_unit": 0.2022945802701586
+      }
+    ],
+    "chosen_batch_width": "pending_verification",
+    "note": "Clean-machine width sweep under RecursiveCheckpointAdjoint. Chosen width is the largest with ratio<=1.25, else <=2.5, else 1.",
+    "choice_rule_superseded": "Earlier chosen_batch_width=4 used wall-ratio thresholds. SBC should minimise wall/replicate; on raw numbers width 16 wins (0.20 vs 0.37). Pending width_sweep_verified for shape/step-size confirmation."
+  },
+  "chosen_batch_width": 16,
+  "best_width_ratio": 3.500496575034876,
+  "best_width": 16,
+  "width_sweep_verified": {
+    "date": "2026-08-08",
+    "n_warmup": 20,
+    "seed": 20260808,
+    "max_tree_depth": 7,
+    "adjoint_mode": "recursive_checkpoint",
+    "adjoint_checkpoints": 180,
+    "gate": {
+      "p0": 0.5,
+      "tau_gate": 0.15,
+      "k": 650.0,
+      "fixed_step_size": 0.003,
+      "burn_in_hours": 48.0,
+      "retained_hours": 24.0
+    },
+    "sequential_1": {
+      "chain_method": "sequential",
+      "num_chains": 1,
+      "wall_seconds_including_compile": 758.6952574169263,
+      "num_warmup": 20,
+      "num_samples": 1,
+      "sample_shapes": {
+        "amplitude": [
+          1,
+          1
+        ],
+        "amplitude_fraction": [
+          1,
+          1
+        ],
+        "c1": [
+          1,
+          1
+        ],
+        "c2": [
+          1,
+          1
+        ],
+        "chi_sleep": [
+          1,
+          1
+        ],
+        "chi_wake": [
+          1,
+          1
+        ],
+        "excursion_fraction": [
+          1,
+          1
+        ],
+        "misclassification": [
+          1,
+          1
+        ],
+        "phase": [
+          1,
+          1
+        ],
+        "phase_z1": [
+          1,
+          1
+        ],
+        "phase_z2": [
+          1,
+          1
+        ],
+        "tau": [
+          1,
+          1
+        ],
+        "threshold_gap": [
+          1,
+          1
+        ],
+        "threshold_margin": [
+          1,
+          1
+        ],
+        "total_excursion": [
+          1,
+          1
+        ]
+      },
+      "shapes_ok": true,
+      "adapted_step_size": [],
+      "n_adapted_step_sizes": 0,
+      "step_sizes_match_chains": false,
+      "chains_not_all_identical": true,
+      "n_divergences": 0,
+      "extra_field_keys": [
+        "diverging"
+      ],
+      "wall_per_replicate": 758.6952574169263,
+      "relative_work_vs_seq1_unit": null
+    },
+    "vectorized_by_width": [
+      {
+        "chain_method": "vectorized",
+        "num_chains": 4,
+        "wall_seconds_including_compile": 1184.7404400417581,
+        "num_warmup": 20,
+        "num_samples": 1,
+        "sample_shapes": {
+          "amplitude": [
+            4,
+            1
+          ],
+          "amplitude_fraction": [
+            4,
+            1
+          ],
+          "c1": [
+            4,
+            1
+          ],
+          "c2": [
+            4,
+            1
+          ],
+          "chi_sleep": [
+            4,
+            1
+          ],
+          "chi_wake": [
+            4,
+            1
+          ],
+          "excursion_fraction": [
+            4,
+            1
+          ],
+          "misclassification": [
+            4,
+            1
+          ],
+          "phase": [
+            4,
+            1
+          ],
+          "phase_z1": [
+            4,
+            1
+          ],
+          "phase_z2": [
+            4,
+            1
+          ],
+          "tau": [
+            4,
+            1
+          ],
+          "threshold_gap": [
+            4,
+            1
+          ],
+          "threshold_margin": [
+            4,
+            1
+          ],
+          "total_excursion": [
+            4,
+            1
+          ]
+        },
+        "shapes_ok": true,
+        "adapted_step_size": [],
+        "n_adapted_step_sizes": 0,
+        "chains_not_all_identical": false,
+        "n_divergences": 0,
+        "extra_field_keys": [
+          "diverging"
+        ],
+        "wall_per_replicate": 296.18511001043953,
+        "relative_work_vs_seq1_unit": 0.39038745413914816,
+        "ratio_over_sequential1": 1.5615498165565926,
+        "step_sizes_check": "not_available: prior run used mcmc.last (AttributeError); API is mcmc.last_state"
+      },
+      {
+        "chain_method": "vectorized",
+        "num_chains": 8,
+        "wall_seconds_including_compile": 2258.9512707497925,
+        "num_warmup": 20,
+        "num_samples": 1,
+        "sample_shapes": {
+          "amplitude": [
+            8,
+            1
+          ],
+          "amplitude_fraction": [
+            8,
+            1
+          ],
+          "c1": [
+            8,
+            1
+          ],
+          "c2": [
+            8,
+            1
+          ],
+          "chi_sleep": [
+            8,
+            1
+          ],
+          "chi_wake": [
+            8,
+            1
+          ],
+          "excursion_fraction": [
+            8,
+            1
+          ],
+          "misclassification": [
+            8,
+            1
+          ],
+          "phase": [
+            8,
+            1
+          ],
+          "phase_z1": [
+            8,
+            1
+          ],
+          "phase_z2": [
+            8,
+            1
+          ],
+          "tau": [
+            8,
+            1
+          ],
+          "threshold_gap": [
+            8,
+            1
+          ],
+          "threshold_margin": [
+            8,
+            1
+          ],
+          "total_excursion": [
+            8,
+            1
+          ]
+        },
+        "shapes_ok": true,
+        "adapted_step_size": [],
+        "n_adapted_step_sizes": 0,
+        "chains_not_all_identical": false,
+        "n_divergences": 0,
+        "extra_field_keys": [
+          "diverging"
+        ],
+        "wall_per_replicate": 282.36890884372406,
+        "relative_work_vs_seq1_unit": 0.3721769789428823,
+        "ratio_over_sequential1": 2.9774158315430586,
+        "step_sizes_check": "not_available: prior run used mcmc.last (AttributeError); API is mcmc.last_state"
+      },
+      {
+        "chain_method": "vectorized",
+        "num_chains": 16,
+        "wall_seconds_including_compile": 2655.8101500831544,
+        "num_warmup": 20,
+        "num_samples": 1,
+        "sample_shapes": {
+          "amplitude": [
+            16,
+            1
+          ],
+          "amplitude_fraction": [
+            16,
+            1
+          ],
+          "c1": [
+            16,
+            1
+          ],
+          "c2": [
+            16,
+            1
+          ],
+          "chi_sleep": [
+            16,
+            1
+          ],
+          "chi_wake": [
+            16,
+            1
+          ],
+          "excursion_fraction": [
+            16,
+            1
+          ],
+          "misclassification": [
+            16,
+            1
+          ],
+          "phase": [
+            16,
+            1
+          ],
+          "phase_z1": [
+            16,
+            1
+          ],
+          "phase_z2": [
+            16,
+            1
+          ],
+          "tau": [
+            16,
+            1
+          ],
+          "threshold_gap": [
+            16,
+            1
+          ],
+          "threshold_margin": [
+            16,
+            1
+          ],
+          "total_excursion": [
+            16,
+            1
+          ]
+        },
+        "shapes_ok": true,
+        "adapted_step_size": [],
+        "n_adapted_step_sizes": 0,
+        "chains_not_all_identical": false,
+        "n_divergences": 1,
+        "extra_field_keys": [
+          "diverging"
+        ],
+        "wall_per_replicate": 165.98813438019715,
+        "relative_work_vs_seq1_unit": 0.21878103593967976,
+        "ratio_over_sequential1": 3.500496575034876,
+        "step_sizes_check": "not_available: prior run used mcmc.last (AttributeError); API is mcmc.last_state"
+      }
+    ],
+    "all_widths_validated": true,
+    "chosen_batch_width": 16,
+    "choice_rule": "Chosen by min wall_per_replicate among widths with shapes_ok=True. step_sizes_check is separate (ok|mismatch|not_available) and does not veto.",
+    "previous_unverified_width16_wall": 2654.3921037078835,
+    "note": "Selection keys on shapes_ok + min wall/replicate. Width-16 wall/rep=166s confirmed with shapes_ok. step_sizes_check not_available on the overnight verify (wrong attribute); script fixed to mcmc.last_state \u2014 re-probe optional, not required for choice.",
+    "all_shapes_ok": true,
+    "step_sizes_status": {
+      "4": "not_available: prior run used mcmc.last (AttributeError); API is mcmc.last_state",
+      "8": "not_available: prior run used mcmc.last (AttributeError); API is mcmc.last_state",
+      "16": "not_available: prior run used mcmc.last (AttributeError); API is mcmc.last_state"
+    },
+    "date_choice_fixed": "2026-08-09"
+  },
+  "adjoint_at_batch_widths": {
+    "date": "2026-08-08",
+    "status": "deferred",
+    "sbc_adjoint": "recursive_checkpoint",
+    "reason": "Direct-vs-Recursive at batch width cancelled: 2\u20133 h measurement to choose between configurations differing by maybe 10\u201315% on a 16\u201319 h SBC run. Keep RecursiveCheckpointAdjoint(180) from the single-chain 1.88\u00d7 timing and unconstrained-gradient audit."
+  },
+  "sbc_adjoint": "recursive_checkpoint",
+  "best_wall_per_replicate": 165.98813438019715
+}

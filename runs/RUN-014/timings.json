@@ -1,0 +1,30 @@
+{
+  "compile_seconds": 12.462962875002631,
+  "compile_seconds_by_chain": [
+    6.279403375001493,
+    1.9708223749985336,
+    2.03499612500309,
+    2.1777409999995143
+  ],
+  "data_generation_seconds": 0.8718462079996243,
+  "gradient_compile_seconds": 1.4098278330002358,
+  "gradient_max_seconds": 0.5422528330000205,
+  "gradient_mean_seconds": 0.5358186331002799,
+  "gradient_median_seconds": 0.5355221040008473,
+  "gradient_min_seconds": 0.528452708000259,
+  "gradient_repeats": 10.0,
+  "sampling_seconds": 19642.162780876002,
+  "sampling_seconds_by_chain": [
+    5750.496288584,
+    4929.124908334001,
+    3757.562222624998,
+    5204.979361333004
+  ],
+  "warmup_seconds": 35217.654541333,
+  "warmup_seconds_by_chain": [
+    10402.315178042,
+    7895.668997875,
+    7699.325699707995,
+    9220.344665708006
+  ]
+}

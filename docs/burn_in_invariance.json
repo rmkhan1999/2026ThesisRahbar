@@ -1,0 +1,70 @@
+{
+  "candidates": [
+    {
+      "burn_in_hours": 24.0,
+      "retained_hours": 240.0,
+      "atol_hours": 0.01,
+      "max_transition_delta_hours": 3.9983530512400316,
+      "labels_identical": false,
+      "comparable_transition_counts": true,
+      "pass": false,
+      "initial_pressures": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "reference_transition_count": 20
+    },
+    {
+      "burn_in_hours": 48.0,
+      "retained_hours": 240.0,
+      "atol_hours": 0.01,
+      "max_transition_delta_hours": 0.48868665395588007,
+      "labels_identical": false,
+      "comparable_transition_counts": true,
+      "pass": false,
+      "initial_pressures": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "reference_transition_count": 20
+    },
+    {
+      "burn_in_hours": 72.0,
+      "retained_hours": 240.0,
+      "atol_hours": 0.01,
+      "max_transition_delta_hours": 0.0010003172569650332,
+      "labels_identical": true,
+      "comparable_transition_counts": true,
+      "pass": true,
+      "initial_pressures": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "reference_transition_count": 20
+    },
+    {
+      "burn_in_hours": 120.0,
+      "retained_hours": 240.0,
+      "atol_hours": 0.01,
+      "max_transition_delta_hours": 4.8810634842411105e-05,
+      "labels_identical": true,
+      "comparable_transition_counts": true,
+      "pass": true,
+      "initial_pressures": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "reference_transition_count": 20
+    }
+  ],
+  "chosen_burn_in_hours": 72.0,
+  "criterion": "shortest burn-in among tested values with max post-burn-in transition delta <= 0.01 h and identical epoch labels across four initial pressures"
+}

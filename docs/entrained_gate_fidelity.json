@@ -1,0 +1,58 @@
+{
+  "regime": "entrained",
+  "duration_hours": 240.0,
+  "criterion_note": "Forced transition MAE and epoch-label agreement under a=0.12. Free-running multi-day fidelity is not the admissibility test for this design.",
+  "variants": [
+    {
+      "k": 650.0,
+      "tau_gate": 0.05,
+      "duration_hours": 240.0,
+      "fixed_step_size": 0.0025,
+      "circadian_amplitude": 0.12,
+      "forced_transition_mae_hours": 0.26368373979414106,
+      "forced_transition_max_hours": 0.809341524024866,
+      "matched_transitions": 19,
+      "unmatched_hard": 0,
+      "unmatched_soft": 0,
+      "epoch_label_agreement": 0.9896049896049897,
+      "soft_sleep_fraction": 0.3305613305613306,
+      "hard_sleep_fraction": 0.3367983367983368,
+      "hard_forced_onset_period_hours": 24.0,
+      "solver_steps": 96001
+    },
+    {
+      "k": 2000.0,
+      "tau_gate": 0.05,
+      "duration_hours": 240.0,
+      "fixed_step_size": 0.0025,
+      "circadian_amplitude": 0.12,
+      "forced_transition_mae_hours": 0.16372264506823206,
+      "forced_transition_max_hours": 0.34492829714476425,
+      "matched_transitions": 19,
+      "unmatched_hard": 0,
+      "unmatched_soft": 0,
+      "epoch_label_agreement": 0.9958419958419958,
+      "soft_sleep_fraction": 0.33264033264033266,
+      "hard_sleep_fraction": 0.3367983367983368,
+      "hard_forced_onset_period_hours": 24.0,
+      "solver_steps": 96001
+    },
+    {
+      "k": 5500.0,
+      "tau_gate": 0.05,
+      "duration_hours": 240.0,
+      "fixed_step_size": 0.0025,
+      "circadian_amplitude": 0.12,
+      "forced_transition_mae_hours": 0.08728568191377521,
+      "forced_transition_max_hours": 0.1899659413979009,
+      "matched_transitions": 19,
+      "unmatched_hard": 0,
+      "unmatched_soft": 0,
+      "epoch_label_agreement": 0.9958419958419958,
+      "soft_sleep_fraction": 0.33264033264033266,
+      "hard_sleep_fraction": 0.3367983367983368,
+      "hard_forced_onset_period_hours": 24.0,
+      "solver_steps": 96001
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+{
+  "warmup": 50,
+  "dense_mass": false,
+  "fixed_misclassification": 0.01,
+  "sampled_parameters": [
+    "phase_z1",
+    "phase_z2",
+    "excursion_fraction",
+    "amplitude_fraction",
+    "chi_sleep",
+    "chi_wake"
+  ],
+  "final_step_size": 0.8108026248738321,
+  "min_step_size": 0.033234270005508326,
+  "max_step_size": 2.3350647909091338,
+  "divergence_fraction": 0.1,
+  "mean_accept_prob": 0.7631370335226808,
+  "collapse_like_run006": false,
+  "healthy_like_prior": true,
+  "iterations": [
+    {
+      "iteration": 1,
+      "step_size": 2.3350647909091338,
+      "tree_depth": 1,
+      "diverging": 1,
+      "num_steps": 1,
+      "accept_prob": 0.0,
+      "seconds": 0.001070499885827303
+    },
+    {
+      "iteration": 2,
+      "step_size": 0.2302358470854968,
+      "tree_depth": 1,
+      "diverging": 1,
+      "num_steps": 1,
+      "accept_prob": 0.0,
+      "seconds": 0.0005157496780157089
+    },
+    {
+      "iteration": 3,
+      "step_size": 0.1625452002272746,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.8540870549726781,
+      "seconds": 0.00044274982064962387
+    },
+    {
+      "iteration": 4,
+      "step_size": 0.17401141664730124,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9279861333278253,
+      "seconds": 0.00032958388328552246
+    },
+    {
+      "iteration": 5,
+      "step_size": 0.25973863314017664,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9934567126937487,
+      "seconds": 0.00035183271393179893
+    },
+    {
+      "iteration": 6,
+      "step_size": 0.054695574524248045,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 9,
+      "accept_prob": 0.32336231991513376,
+      "seconds": 0.00043504172936081886
+    },
+    {
+      "iteration": 7,
+      "step_size": 0.08647767022077013,
+      "tree_depth": 5,
+      "diverging": 0,
+      "num_steps": 31,
+      "accept_prob": 0.9749303181367829,
+      "seconds": 0.00042966706678271294
+    },
+    {
+      "iteration": 8,
+      "step_size": 0.12939742155142117,
+      "tree_depth": 5,
+      "diverging": 0,
+      "num_steps": 31,
+      "accept_prob": 0.9428267320513157,
+      "seconds": 0.000238833948969841
+    },
+    {
+      "iteration": 9,
+      "step_size": 0.20572269677715294,
+      "tree_depth": 3,
+      "diverging": 0,
+      "num_steps": 7,
+      "accept_prob": 0.9534771688769031,
+      "seconds": 0.0002909167669713497
+    },
+    {
+      "iteration": 10,
+      "step_size": 0.2550685067231368,
+      "tree_depth": 3,
+      "diverging": 0,
+      "num_steps": 7,
+      "accept_prob": 0.869694536123215,
+      "seconds": 0.0001566670835018158
+    },
+    {
+      "iteration": 11,
+      "step_size": 0.26031439295305403,
+      "tree_depth": 3,
+      "diverging": 0,
+      "num_steps": 7,
+      "accept_prob": 0.8051274207416617,
+      "seconds": 0.0010904581286013126
+    },
+    {
+      "iteration": 12,
+      "step_size": 0.19178038350985968,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.6994913099640409,
+      "seconds": 0.0003314167261123657
+    },
+    {
+      "iteration": 13,
+      "step_size": 0.34137259457515207,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9783406345291581,
+      "seconds": 0.00024133315309882164
+    },
+    {
+      "iteration": 14,
+      "step_size": 0.033234270005508326,
+      "tree_depth": 3,
+      "diverging": 1,
+      "num_steps": 5,
+      "accept_prob": 0.04698512585544261,
+      "seconds": 0.00026187486946582794
+    },
+    {
+      "iteration": 15,
+      "step_size": 0.06400021819925428,
+      "tree_depth": 7,
+      "diverging": 0,
+      "num_steps": 127,
+      "accept_prob": 0.9998848037700229,
+      "seconds": 0.0005599581636488438
+    },
+    {
+      "iteration": 16,
+      "step_size": 0.11318585781439239,
+      "tree_depth": 6,
+      "diverging": 0,
+      "num_steps": 63,
+      "accept_prob": 0.973924256923608,
+      "seconds": 0.00035691726952791214
+    },
+    {
+      "iteration": 17,
+      "step_size": 0.14503269953360431,
+      "tree_depth": 3,
+      "diverging": 0,
+      "num_steps": 7,
+      "accept_prob": 0.870318721716357,
+      "seconds": 0.00021849991753697395
+    },
+    {
+      "iteration": 18,
+      "step_size": 0.25151511156330836,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9708324441057168,
+      "seconds": 0.00022579170763492584
+    },
+    {
+      "iteration": 19,
+      "step_size": 0.45608845700353684,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.988157648377567,
+      "seconds": 0.00015912530943751335
+    },
+    {
+      "iteration": 20,
+      "step_size": 0.04307449127248934,
+      "tree_depth": 1,
+      "diverging": 0,
+      "num_steps": 1,
+      "accept_prob": 2.1310995770708366e-23,
+      "seconds": 0.00015575019642710686
+    },
+    {
+      "iteration": 21,
+      "step_size": 0.0808019297360284,
+      "tree_depth": 6,
+      "diverging": 0,
+      "num_steps": 47,
+      "accept_prob": 0.9973724356449059,
+      "seconds": 0.0003421669825911522
+    },
+    {
+      "iteration": 22,
+      "step_size": 0.11803928808834156,
+      "tree_depth": 5,
+      "diverging": 0,
+      "num_steps": 31,
+      "accept_prob": 0.915397322435954,
+      "seconds": 0.0003432915546000004
+    },
+    {
+      "iteration": 23,
+      "step_size": 0.1307051264126293,
+      "tree_depth": 3,
+      "diverging": 0,
+      "num_steps": 7,
+      "accept_prob": 0.8220709016771421,
+      "seconds": 0.00033362535759806633
+    },
+    {
+      "iteration": 24,
+      "step_size": 0.23316259961572616,
+      "tree_depth": 5,
+      "diverging": 0,
+      "num_steps": 31,
+      "accept_prob": 0.9879987819055783,
+      "seconds": 0.0002693752758204937
+    },
+    {
+      "iteration": 25,
+      "step_size": 0.058499134946422594,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.3048122744743232,
+      "seconds": 0.00023633427917957306
+    },
+    {
+      "iteration": 26,
+      "step_size": 0.09752502155929661,
+      "tree_depth": 6,
+      "diverging": 0,
+      "num_steps": 63,
+      "accept_prob": 0.9649513868284573,
+      "seconds": 0.0003299163654446602
+    },
+    {
+      "iteration": 27,
+      "step_size": 0.13545932335342553,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9029788821100001,
+      "seconds": 0.00022083288058638573
+    },
+    {
+      "iteration": 28,
+      "step_size": 0.20723239155432022,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9396145209683934,
+      "seconds": 0.00020962487906217575
+    },
+    {
+      "iteration": 29,
+      "step_size": 0.37086528447121825,
+      "tree_depth": 2,
+      "diverging": 0,
+      "num_steps": 3,
+      "accept_prob": 0.9989616936892846,
+      "seconds": 0.00013687508180737495
+    },
+    {
+      "iteration": 30,
+      "step_size": 0.04266496888083426,
+      "tree_depth": 2,
+      "diverging": 1,
+      "num_steps": 3,
+      "accept_prob": 0.00035760047029583046,
+      "seconds": 0.00020466698333621025
+    },
+    {
+      "iteration": 31,
+      "step_size": 0.07288854191023582,
+      "tree_depth": 5,
+      "diverging": 0,
+      "num_steps": 23,
+      "accept_prob": 0.9805830297141614,
+      "seconds": 0.000205999705940485
+    },
+    {
+      "iteration": 32,
+      "step_size": 0.12548850244674367,
+      "tree_depth": 6,
+      "diverging": 0,
+      "num_steps": 63,
+      "accept_prob": 0.9867213857020621,
+      "seconds": 0.0003110421821475029
+    },
+    {
+      "iteration": 33,
+      "step_size": 0.221500443820414,
+      "tree_depth": 3,
+      "diverging": 0,
+      "num_steps": 7,
+      "accept_prob": 0.9993708447537644,
+      "seconds": 0.00025075022131204605
+    },
+    {
+      "iteration": 34,
+      "step_size": 0.30638623078736715,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9108596082082713,
+      "seconds": 0.00020229071378707886
+    },
+    {
+      "iteration": 35,
+      "step_size": 0.0387389080971149,
+      "tree_depth": 3,
+      "diverging": 0,
+      "num_steps": 7,
+      "accept_prob": 0.002963679583498563,
+      "seconds": 0.00022199982777237892
+    },
+    {
+      "iteration": 36,
+      "step_size": 0.05979966280907813,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9496885090421913,
+      "seconds": 0.000353208277374506
+    },
+    {
+      "iteration": 37,
+      "step_size": 0.09232985508758931,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9524325486805364,
+      "seconds": 0.00016262521967291832
+    },
+    {
+      "iteration": 38,
+      "step_size": 0.15998725128462374,
+      "tree_depth": 5,
+      "diverging": 0,
+      "num_steps": 31,
+      "accept_prob": 1.0,
+      "seconds": 0.0002722078934311867
+    },
+    {
+      "iteration": 39,
+      "step_size": 0.13842187819936141,
+      "tree_depth": 3,
+      "diverging": 0,
+      "num_steps": 7,
+      "accept_prob": 0.730863989842651,
+      "seconds": 0.00023741740733385086
+    },
+    {
+      "iteration": 40,
+      "step_size": 0.09778112419037911,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.6498942641406444,
+      "seconds": 0.0001998748630285263
+    },
+    {
+      "iteration": 41,
+      "step_size": 0.15988670785359088,
+      "tree_depth": 5,
+      "diverging": 0,
+      "num_steps": 19,
+      "accept_prob": 0.9821393929571883,
+      "seconds": 0.00020395778119564056
+    },
+    {
+      "iteration": 42,
+      "step_size": 0.21568410423950998,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9079128831694002,
+      "seconds": 0.00017087487503886223
+    },
+    {
+      "iteration": 43,
+      "step_size": 0.3618569502677611,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9978554833511668,
+      "seconds": 0.0002582077868282795
+    },
+    {
+      "iteration": 44,
+      "step_size": 0.052045911387135275,
+      "tree_depth": 2,
+      "diverging": 1,
+      "num_steps": 3,
+      "accept_prob": 0.0010101011421346092,
+      "seconds": 0.00019929185509681702
+    },
+    {
+      "iteration": 45,
+      "step_size": 0.08653379717755832,
+      "tree_depth": 4,
+      "diverging": 0,
+      "num_steps": 15,
+      "accept_prob": 0.9931424170993716,
+      "seconds": 0.00018295831978321075
+    },
+    {
+      "iteration": 46,
+      "step_size": 1.2431909617109596,
+      "tree_depth": 5,
+      "diverging": 0,
+      "num_steps": 31,
+      "accept_prob": 0.9992741079829913,
+      "seconds": 0.00030783284455537796
+    },
+    {
+      "iteration": 47,
+      "step_size": 0.4572425181281927,
+      "tree_depth": 2,
+      "diverging": 0,
+      "num_steps": 3,
+      "accept_prob": 0.33008520151667625,
+      "seconds": 0.00025504129007458687
+    },
+    {
+      "iteration": 48,
+      "step_size": 0.6785660372389157,
+      "tree_depth": 3,
+      "diverging": 0,
+      "num_steps": 7,
+      "accept_prob": 0.9793962970851945,
+      "seconds": 0.0002543339505791664
+    },
+    {
+      "iteration": 49,
+      "step_size": 0.706098811969917,
+      "tree_depth": 2,
+      "diverging": 0,
+      "num_steps": 3,
+      "accept_prob": 0.8200666569112024,
+      "seconds": 0.0003111669793725014
+    },
+    {
+      "iteration": 50,
+      "step_size": 0.8108026248738321,
+      "tree_depth": 3,
+      "diverging": 0,
+      "num_steps": 7,
+      "accept_prob": 0.9751921329654222,
+      "seconds": 0.0002288329415023327
+    }
+  ]
+}

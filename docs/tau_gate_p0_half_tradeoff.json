@@ -1,0 +1,409 @@
+{
+  "note": "p0=0.5 (\u03b8=0). Bias output_step=0.01. User-requested \u03c4\u2208{0.05,0.1} at k=650 fail bias; k\u22652000 fail cosine; joint accept at \u03c4=0.1/k=800/dt=0.002; cheaper candidates at larger \u03c4_g tested.",
+  "bias_scan": [
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 650,
+      "bias_on_minutes": -12.579777173376954,
+      "bias_off_minutes": -13.614848324409365,
+      "max_abs_bias_minutes": 13.614848324409365
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 800,
+      "bias_on_minutes": -9.541157572377301,
+      "bias_off_minutes": -10.3202498168352,
+      "max_abs_bias_minutes": 10.3202498168352
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 1000,
+      "bias_on_minutes": -6.85670160957784,
+      "bias_off_minutes": -7.426795718728556,
+      "max_abs_bias_minutes": 7.426795718728556
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 1200,
+      "bias_on_minutes": -5.0478928864512795,
+      "bias_off_minutes": -5.488275202137061,
+      "max_abs_bias_minutes": 5.488275202137061
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 1400,
+      "bias_on_minutes": -3.7504792015914745,
+      "bias_off_minutes": -4.087735153136123,
+      "max_abs_bias_minutes": 4.087735153136123
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 1600,
+      "bias_on_minutes": -2.760698561532422,
+      "bias_off_minutes": -3.038883428558279,
+      "max_abs_bias_minutes": 3.038883428558279
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 1800,
+      "bias_on_minutes": -1.9955184240762947,
+      "bias_off_minutes": -2.2087809998058106,
+      "max_abs_bias_minutes": 2.2087809998058106
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 2000,
+      "bias_on_minutes": -1.3723880408556965,
+      "bias_off_minutes": -1.5436616226398314,
+      "max_abs_bias_minutes": 1.5436616226398314
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 650,
+      "bias_on_minutes": -6.233337323788248,
+      "bias_off_minutes": -6.865645063770955,
+      "max_abs_bias_minutes": 6.865645063770955
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 800,
+      "bias_on_minutes": -3.4996324232045595,
+      "bias_off_minutes": -3.911815025241765,
+      "max_abs_bias_minutes": 3.911815025241765
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 1000,
+      "bias_on_minutes": -1.1012847869753273,
+      "bias_off_minutes": -1.33898503474569,
+      "max_abs_bias_minutes": 1.33898503474569
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 1200,
+      "bias_on_minutes": 0.5121082385329601,
+      "bias_off_minutes": 0.38811237948948474,
+      "max_abs_bias_minutes": 0.5121082385329601
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 1400,
+      "bias_on_minutes": 1.6779073320699922,
+      "bias_off_minutes": 1.6276609109064566,
+      "max_abs_bias_minutes": 1.6779073320699922
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 1600,
+      "bias_on_minutes": 2.5664196184041543,
+      "bias_off_minutes": 2.5674713600176347,
+      "max_abs_bias_minutes": 2.5674713600176347
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 1800,
+      "bias_on_minutes": 3.247944833542533,
+      "bias_off_minutes": 3.3216812168819843,
+      "max_abs_bias_minutes": 3.3216812168819843
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 2000,
+      "bias_on_minutes": 3.7032329638716988,
+      "bias_off_minutes": 3.8356296766076525,
+      "max_abs_bias_minutes": 3.8356296766076525
+    }
+  ],
+  "criteria": {
+    "bias_max_minutes": 5.0,
+    "cosine_min": 0.9999
+  },
+  "configurations": [
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 650,
+      "bias": {
+        "max_abs_bias_minutes": 13.61
+      },
+      "gradient_audit": {
+        "min_cosine": 0.999982,
+        "all_pass_cosine": true
+      },
+      "acceptable": false,
+      "source": "prior"
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 650,
+      "bias": {
+        "max_abs_bias_minutes": 6.87
+      },
+      "gradient_audit": {
+        "min_cosine": 0.999978,
+        "all_pass_cosine": true
+      },
+      "acceptable": false,
+      "source": "prior"
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 2000,
+      "bias": {
+        "max_abs_bias_minutes": 1.54
+      },
+      "gradient_audit": {
+        "min_cosine": -0.917289,
+        "all_pass_cosine": false
+      },
+      "acceptable": false,
+      "source": "prior"
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 2000,
+      "bias": {
+        "max_abs_bias_minutes": 3.84
+      },
+      "gradient_audit": {
+        "min_cosine": -0.933977,
+        "all_pass_cosine": false
+      },
+      "acceptable": false,
+      "source": "prior"
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.05,
+      "fixed_step_size": 0.001,
+      "k": 5500,
+      "bias": {
+        "max_abs_bias_minutes": 2.29
+      },
+      "gradient_audit": {
+        "min_cosine": -0.700321,
+        "all_pass_cosine": false
+      },
+      "acceptable": false,
+      "source": "prior"
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.1,
+      "fixed_step_size": 0.002,
+      "k": 800,
+      "bias": {
+        "bias_on_minutes": -3.4996324232045595,
+        "bias_off_minutes": -3.911815025241765,
+        "max_abs_bias_minutes": 3.911815025241765
+      },
+      "gradient_audit": {
+        "min_cosine": 0.9999892864017181,
+        "all_pass_cosine": true,
+        "seconds": 171.4424781249836,
+        "cosines": [
+          0.9999994390633613,
+          0.9999990626245759,
+          0.9999892864017181,
+          0.9999997293020172,
+          0.9999999175932479,
+          0.9999995692984578,
+          0.9999990746577804,
+          0.9999999677503543,
+          0.9999999650517137,
+          0.999999998557917,
+          0.9999999434927654,
+          0.9999999673413894,
+          0.9999988744557795,
+          0.9999986149451551,
+          0.9999999969775831,
+          0.9999996330312573,
+          0.9999999024980964,
+          0.9999999582757059,
+          0.999999705965411,
+          0.9999999960871675
+        ]
+      },
+      "acceptable": true,
+      "source": "k_gap"
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.15,
+      "fixed_step_size": 0.003,
+      "k": 650,
+      "bias": {
+        "bias_on_minutes": -0.5454110017262792,
+        "bias_off_minutes": -0.8346738544463506,
+        "max_abs_bias_minutes": 0.8346738544463506
+      },
+      "gradient_audit": {
+        "min_cosine": 0.9999625141877309,
+        "all_pass_cosine": true,
+        "seconds": 116.69307395862415,
+        "cosines": [
+          0.9999999959842293,
+          0.9999998923823027,
+          0.9999625141877309,
+          0.9999999874185385,
+          0.9999999926366653,
+          0.9999999961596697,
+          0.9999999990500155,
+          0.9999999997244777,
+          0.9999999998374937,
+          0.9999999992571791,
+          0.9999999994241514,
+          0.9999999977407601,
+          0.9999999974093777,
+          0.9999999178612289,
+          0.9999999999679076,
+          0.999999987818594,
+          0.9999999996993291,
+          0.9999999948505653,
+          0.9999999999138248,
+          0.9999999974392558
+        ]
+      },
+      "acceptable": true,
+      "source": "cheaper_dt"
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.2,
+      "fixed_step_size": 0.004,
+      "k": 650,
+      "bias": {
+        "bias_on_minutes": 4.864805834488948,
+        "bias_off_minutes": 4.8715634791420825,
+        "max_abs_bias_minutes": 4.8715634791420825
+      },
+      "gradient_audit": {
+        "min_cosine": 0.9999314047924611,
+        "all_pass_cosine": true,
+        "seconds": 88.73131954111159,
+        "cosines": [
+          0.999999981807947,
+          0.9999999941579322,
+          0.9999314047924611,
+          0.9999999995695935,
+          0.9999999996702484,
+          0.9999999886282782,
+          0.9999999720436419,
+          0.9999999999145537,
+          0.9999999998559851,
+          0.999999999969643,
+          0.9999999973768022,
+          0.9999999985334144,
+          0.9999997773759567,
+          0.9999999989471019,
+          0.9999999997815459,
+          0.9999999956119826,
+          0.9999999981482439,
+          0.9999999878902696,
+          0.9999999998125708,
+          0.9999999995722667
+        ]
+      },
+      "acceptable": true,
+      "source": "cheaper_dt"
+    },
+    {
+      "p0": 0.5,
+      "tau_gate": 0.15,
+      "fixed_step_size": 0.003,
+      "k": 800,
+      "bias": {
+        "bias_on_minutes": 1.992823601294731,
+        "bias_off_minutes": 1.8820305787141933,
+        "max_abs_bias_minutes": 1.992823601294731
+      },
+      "gradient_audit": {
+        "min_cosine": 0.9994760982326615,
+        "all_pass_cosine": false,
+        "seconds": 117.58119850000367,
+        "cosines": [
+          0.9999999910696684,
+          0.9999999817525266,
+          0.9994760982326615,
+          0.9999999489742127,
+          0.9999999883749108,
+          0.9999999943482075,
+          0.9999999077155536,
+          0.9999999880274275,
+          0.999999996265533,
+          0.9999999983671707,
+          0.99999999473207,
+          0.9999999907951703,
+          0.9999974510265421,
+          0.9999998924877058,
+          0.9999999962060303,
+          0.9999998997066776,
+          0.9999999368236788,
+          0.999999991966831,
+          0.9999999580438265,
+          0.9999999197528715
+        ]
+      },
+      "acceptable": false,
+      "source": "cheaper_dt"
+    }
+  ],
+  "any_acceptable": true,
+  "recommendation": {
+    "p0": 0.5,
+    "tau_gate": 0.15,
+    "fixed_step_size": 0.003,
+    "k": 650,
+    "max_abs_bias_minutes": 0.8346738544463506,
+    "min_cosine": 0.9999625141877309,
+    "why": "best bias margin among acceptable; cheaper than \u03c4=0.1/k=800/dt=0.002"
+  },
+  "overnight_plan": {
+    "run_id": "RUN-010",
+    "chains": 2,
+    "warmup": 200,
+    "draws": 200,
+    "max_tree_depth": 9,
+    "est_s_per_iter_vs_run009": "\u22483.3\u00d7 (dt 0.003 vs 0.01) \u2192 ~300 s/iter",
+    "est_wall_hours": "\u224833\u201340 h for 2\u00d7400 iters; exceeds 10 h \u2014 mixing over speed"
+  }
+}

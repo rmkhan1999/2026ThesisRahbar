@@ -1,0 +1,152 @@
+{
+  "k": 650.0,
+  "ic_atol_hours": 0.01,
+  "candidates": [
+    {
+      "dt": 0.04,
+      "max_steps": 20000,
+      "status": "ok",
+      "max_ic_transition_delta_hours": 0.05019275237987131,
+      "ic_labels_identical": true,
+      "ic_pass_atol_0p01": false,
+      "forced_transition_mae_hours": 0.2640825477343732,
+      "epoch_label_agreement": 0.9896049896049897,
+      "forward_steps_360h": 9000,
+      "solver_steps_240h": 6000
+    },
+    {
+      "dt": 0.02,
+      "max_steps": 50000,
+      "status": "ok",
+      "max_ic_transition_delta_hours": 0.0011314955744010646,
+      "ic_labels_identical": true,
+      "ic_pass_atol_0p01": true,
+      "forced_transition_mae_hours": 0.2639019701199006,
+      "epoch_label_agreement": 0.9896049896049897,
+      "forward_steps_360h": 18000,
+      "solver_steps_240h": 12000
+    },
+    {
+      "dt": 0.01,
+      "max_steps": 100000,
+      "status": "ok",
+      "max_ic_transition_delta_hours": 4.8810634842411105e-05,
+      "ic_labels_identical": true,
+      "ic_pass_atol_0p01": true,
+      "forced_transition_mae_hours": 0.2636957311141964,
+      "epoch_label_agreement": 0.9896049896049897,
+      "forward_steps_360h": 36000,
+      "solver_steps_240h": 24000
+    },
+    {
+      "dt": 0.005,
+      "max_steps": 200000,
+      "status": "ok",
+      "max_ic_transition_delta_hours": 0.00010783341241449307,
+      "ic_labels_identical": true,
+      "ic_pass_atol_0p01": true,
+      "forced_transition_mae_hours": 0.2637007990909308,
+      "epoch_label_agreement": 0.9896049896049897,
+      "forward_steps_360h": 72000,
+      "solver_steps_240h": 48001
+    },
+    {
+      "dt": 0.0025,
+      "max_steps": 250000,
+      "status": "ok",
+      "max_ic_transition_delta_hours": 6.824669525506977e-06,
+      "ic_labels_identical": true,
+      "ic_pass_atol_0p01": true,
+      "forced_transition_mae_hours": 0.26368373979414106,
+      "epoch_label_agreement": 0.9896049896049897,
+      "forward_steps_360h": 144000,
+      "solver_steps_240h": 96001
+    }
+  ],
+  "chosen": {
+    "dt": 0.01,
+    "max_steps": 100000,
+    "status": "ok",
+    "max_ic_transition_delta_hours": 4.8810634842411105e-05,
+    "ic_labels_identical": true,
+    "ic_pass_atol_0p01": true,
+    "forced_transition_mae_hours": 0.2636957311141964,
+    "epoch_label_agreement": 0.9896049896049897,
+    "forward_steps_360h": 36000,
+    "solver_steps_240h": 24000
+  },
+  "gradient_timing": {
+    "chosen_dt": {
+      "dt": 0.02,
+      "max_steps": 50000,
+      "status": "ok",
+      "max_ic_transition_delta_hours": 0.0011314955744010646,
+      "ic_labels_identical": true,
+      "ic_pass_atol_0p01": true,
+      "forced_transition_mae_hours": 0.2639019701199006,
+      "epoch_label_agreement": 0.9896049896049897,
+      "forward_steps_360h": 18000,
+      "solver_steps_240h": 12000
+    },
+    "timings": [
+      {
+        "label": "smoke_72h",
+        "retained_hours": 72.0,
+        "burn_in_hours": 120.0,
+        "total_hours": 192.0,
+        "k": 650.0,
+        "dt": 0.02,
+        "compile_and_first_seconds": 2.6214764998294413,
+        "n_repeat": 10,
+        "median_seconds": 0.4943006462417543,
+        "mean_seconds": 0.4949429251719266,
+        "min_seconds": 0.4904545838944614,
+        "max_seconds": 0.5035428330302238,
+        "projected_hours_4x1000_tree10": 561.855067894794,
+        "projected_hours_1x100_tree10_smoke": 14.046376697369851
+      },
+      {
+        "label": "full_240h",
+        "retained_hours": 240.0,
+        "burn_in_hours": 120.0,
+        "total_hours": 360.0,
+        "k": 650.0,
+        "dt": 0.02,
+        "compile_and_first_seconds": 3.4259722498245537,
+        "n_repeat": 10,
+        "median_seconds": 0.9748299580533057,
+        "mean_seconds": 0.976382520981133,
+        "min_seconds": 0.9703240003436804,
+        "max_seconds": 0.9879031670279801,
+        "projected_hours_4x1000_tree10": 1108.0567189872575,
+        "projected_hours_1x100_tree10_smoke": 27.701417974681437
+      }
+    ],
+    "status": "superseded_by_docs/gradient_timing_k650_dt0p01.json",
+    "supersession_reason": "chosen_dt revised from 0.02 to 0.01 after gate overshoot probe"
+  },
+  "gate_boundedness": {
+    "criterion": "gate_values_in_[0,1]_to_solver_tolerance_on_save_grid",
+    "probe": {
+      "0.02": {
+        "min": -0.21009739934248867,
+        "max": 1.1331798290572084,
+        "frac_outside": 0.0004166319473377219,
+        "pass": false
+      },
+      "0.01": {
+        "min": 4.407757059274841e-91,
+        "max": 0.9999999999999999,
+        "frac_outside": 0.0,
+        "pass": true
+      },
+      "0.005": {
+        "min": 4.4248448087210965e-91,
+        "max": 0.9999999999999991,
+        "frac_outside": 0.0,
+        "pass": true
+      }
+    }
+  },
+  "note": "IC invariance alone admitted dt=0.02; gate overshoot of O(0.2) vetoed that step. Coarsest dual-admissible step is dt=0.01. Timing at that setting is in docs/gradient_timing_k650_dt0p01.json."
+}

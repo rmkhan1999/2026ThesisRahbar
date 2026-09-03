@@ -1,0 +1,160 @@
+model:
+  chi_sleep: 4.2
+  chi_wake: 18.2
+
+  mu: 1.0
+  upper_base: 0.67
+  lower_base: 0.17
+  circadian_amplitude: 0.12
+  circadian_period: 24.0
+
+  phase: 0.0
+
+fixed:
+  threshold_mean: 0.42
+
+initial_state:
+  pressure: 0.67
+  hard_asleep: true
+  soft_gate: 0.999
+
+hard_switch:
+  duration: 120.0
+  dt: 0.01
+  start_time: 0.0
+
+soft_gate:
+  p0: 0.5
+  k: 650.0
+  tau_gate: 0.15
+
+  dt0: 0.01
+  integration_mode: fixed
+  fixed_step_size: 0.003
+  relative_tolerance: 1.0e-8
+  absolute_tolerance: 1.0e-10
+  max_steps: 250000
+  adjoint_mode: recursive_checkpoint
+  adjoint_checkpoints: 180
+
+observation:
+  epoch_hours: 0.5
+
+  misclassification: 0.01
+  seed: 2026
+
+priors:
+  chi_sleep:
+    distribution: lognormal
+    log_mean: 1.4350845252893227
+    log_sd: 0.15
+  chi_wake:
+    distribution: lognormal
+    log_mean: 2.9014215940827497
+    log_sd: 0.15
+  phase_z1:
+    distribution: normal
+    mean: 0.0
+    sd: 1.0
+  phase_z2:
+    distribution: normal
+    mean: 0.0
+    sd: 1.0
+  excursion_fraction:
+    distribution: beta
+  amplitude_fraction:
+    distribution: beta
+  misclassification:
+    distribution: beta
+    concentration1: 1.0
+    concentration0: 49.0
+    maximum: 0.5
+
+inference:
+  default_design: entrained
+  parameters:
+    [phase_z1, phase_z2, excursion_fraction, amplitude_fraction,
+     chi_sleep, chi_wake, misclassification]
+  likelihood_parameters:
+    [c1, c2, chi_sleep, chi_wake, threshold_gap, misclassification]
+  reporting:
+    [phase, chi_sleep, chi_wake, circadian_amplitude, threshold_gap,
+     misclassification, total_excursion, threshold_margin]
+
+designs:
+  entrained:
+    reference_amplitude: 0.12
+    constrained_prior:
+      excursion_concentration1: 18.45628297330221
+      excursion_concentration0: 2.494092293689488
+      amplitude_concentration1: 17.928061871897565
+      amplitude_concentration0: 37.35012889978659
+    duration: 240.0
+    burn_in_hours: 48.0
+    infer_initial_pressure: false
+  weak_forcing:
+    reference_amplitude: 0.02
+    constrained_prior:
+      excursion_concentration1: 27.83390893861088
+      excursion_concentration0: 14.665817445514232
+      amplitude_concentration1: 3.4316092536931984
+      amplitude_concentration0: 34.225350527875584
+    duration: 240.0
+    burn_in_hours: 120.0
+    infer_initial_pressure: true
+    initial_pressure_prior:
+      distribution: uniform
+      lower: 0.17
+      upper: 0.67
+
+validation:
+  analytic_absolute_tolerance: 0.001
+  smoothing_p0_values: [0.02, 0.05, 0.10, 0.20]
+  smoothing_k_values: [500.0, 650.0, 1000.0, 2000.0, 5000.0, 5500.0, 10000.0]
+  transition_bias_budget_hours: 0.5
+  transition_pressure_width_5_95: 0.009059812243589047
+  flat_hard_label_agreement_min: 0.8586278586278586
+  tau_gate_values: [0.05, 0.1, 0.2, 0.5]
+  transition_gate_level: 0.5
+  gradient_duration: 36.0
+  finite_difference_step: 1.0e-8
+  gradient_decimal_places: 3
+
+figures:
+  fig2:
+    duration: 72.0
+    path: results/fig2.png
+  smoothing_convergence:
+    path: results/smoothing_convergence.png
+  prior_predictive:
+    path: results/prior_predictive.png
+
+prior_predictive:
+  draws: 200
+  seed: 2027
+  entrained_sleep_fraction_reference: 0.33
+  sleep_fraction_min: 0.10
+  sleep_fraction_max: 0.60
+  max_degenerate_fraction: 0.01
+  minimum_normalized_threshold_margin: 0.0
+  max_physical_domain_violation_fraction: 0.0
+
+prior_domain_audit:
+  draws: 200000
+  seed: 280726
+  superseded_cartesian_sigma: 0.12
+  superseded_gap_log_mean: -0.6931471805599453
+  superseded_gap_log_sd: 0.12
+
+recovery:
+  seed: 31416
+  true_phase: 8.0
+  starting_points:
+    - [5.0, 3.5, 15.0, 0.08, 0.42, 0.01]
+    - [10.0, 5.0, 22.0, 0.16, 0.58, 0.02]
+    - [14.0, 4.0, 17.0, 0.10, 0.48, 0.005]
+  phase_tolerance_hours: 1.0
+  time_constant_relative_tolerance: 0.10
+  weak_amplitude_spread: 0.01
+  weak_gap_spread: 0.02
+  max_iterations: 350

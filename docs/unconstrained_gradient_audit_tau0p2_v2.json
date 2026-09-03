@@ -1,0 +1,790 @@
+{
+  "retained_hours": 48.0,
+  "burn_in_hours": 72.0,
+  "fixed_misclassification": 0.01,
+  "fixed_step_size": 0.01,
+  "tau_gate": 0.2,
+  "k": 650.0,
+  "dt_over_tau_gate": 0.049999999999999996,
+  "adjoint_mode": "direct",
+  "criteria": {
+    "cosine_min": 0.9999,
+    "taylor_abs_ratio_minus_one_max": 0.05,
+    "norm_relative_error_max": 0.001,
+    "taylor_steps": [
+      0.0001,
+      1e-05,
+      1e-06
+    ]
+  },
+  "draws": [
+    {
+      "draw": 0,
+      "seed": 1000,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        2428.0835865078147,
+        -1485.72234097378,
+        -3661.7891214314936,
+        -499.920789796061,
+        -529.4004273635661,
+        -503.20869348158453
+      ],
+      "finite_difference": [
+        3693.7182562098765,
+        -1566.3748962623456,
+        -3759.960504166315,
+        -514.8278540644924,
+        -547.3550573981356,
+        -517.9940588192267
+      ],
+      "relative_error_per_coordinate": [
+        0.3426451564285602,
+        0.0514899437427254,
+        0.026109684563452213,
+        0.028955434619052253,
+        0.03280252880080662,
+        0.028543503706095666
+      ],
+      "max_relative_error_per_coordinate": 0.3426451564285602,
+      "worst_coordinate": "phase_z1",
+      "worst_automatic": 2428.0835865078147,
+      "worst_finite_difference": 3693.7182562098765,
+      "worst_absolute_difference": 1265.6346697020617,
+      "cosine_similarity": 0.9830391787710803,
+      "ad_norm": 4721.765024345216,
+      "fd_norm": 5573.809378507807,
+      "norm_relative_error": 0.15286571468482765,
+      "taylor": [
+        {
+          "h": 0.0001,
+          "observed_delta": 19.426289699177914,
+          "predicted_delta": 2229.506494512978,
+          "taylor_ratio": 0.00871326894404112,
+          "abs_ratio_minus_one": 0.9912867310559589
+        },
+        {
+          "h": 1e-05,
+          "observed_delta": -0.15099613546942692,
+          "predicted_delta": 222.9506494512978,
+          "taylor_ratio": -0.0006772625952920181,
+          "abs_ratio_minus_one": 1.000677262595292
+        },
+        {
+          "h": 1e-06,
+          "observed_delta": -0.8870424377740278,
+          "predicted_delta": 22.295064945129777,
+          "taylor_ratio": -0.03978649265912082,
+          "abs_ratio_minus_one": 1.039786492659121
+        }
+      ],
+      "best_abs_taylor_ratio_minus_one": 0.9912867310559589,
+      "pass_cosine": false,
+      "pass_taylor": false,
+      "pass_norm": false,
+      "pass": false,
+      "min_g": 4.123115748683174e-36,
+      "max_g": 0.9999999999999983,
+      "gate_escape": false
+    },
+    {
+      "draw": 1,
+      "seed": 1001,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        -289.51589989343074,
+        63.26811372530632,
+        460.45993871397303,
+        68.72132074812004,
+        -64.16435054022583,
+        -19.760659842795178
+      ],
+      "finite_difference": [
+        -419.12853317853654,
+        64.28341848447872,
+        936.4375017128167,
+        70.42836114692363,
+        -65.487232133421,
+        -19.810512603868347
+      ],
+      "relative_error_per_coordinate": [
+        0.30924316295568116,
+        0.0157941936366925,
+        0.508285456454108,
+        0.024237968497413546,
+        0.02020060323361953,
+        0.0025164801168968175
+      ],
+      "max_relative_error_per_coordinate": 0.508285456454108,
+      "worst_coordinate": "excursion_fraction",
+      "worst_automatic": 460.45993871397303,
+      "worst_finite_difference": 936.4375017128167,
+      "worst_absolute_difference": 475.97756299884367,
+      "cosine_similarity": 0.9859632052475834,
+      "ad_norm": 555.9458904866325,
+      "fd_norm": 1032.6458579138107,
+      "norm_relative_error": 0.46162967078590245,
+      "taylor": [
+        {
+          "h": 0.0001,
+          "observed_delta": 24.867663575972045,
+          "predicted_delta": 30.907583314897476,
+          "taylor_ratio": 0.8045813004081045,
+          "abs_ratio_minus_one": 0.1954186995918955
+        },
+        {
+          "h": 1e-05,
+          "observed_delta": 3.332386916827403,
+          "predicted_delta": 3.0907583314897478,
+          "taylor_ratio": 1.0781777672087323,
+          "abs_ratio_minus_one": 0.07817776720873226
+        },
+        {
+          "h": 1e-06,
+          "observed_delta": 0.13495619091345645,
+          "predicted_delta": 0.30907583314897474,
+          "taylor_ratio": 0.4366442679729265,
+          "abs_ratio_minus_one": 0.5633557320270735
+        }
+      ],
+      "best_abs_taylor_ratio_minus_one": 0.07817776720873226,
+      "pass_cosine": false,
+      "pass_taylor": false,
+      "pass_norm": false,
+      "pass": false,
+      "min_g": 1.3102138564399974e-32,
+      "max_g": 0.9999999999933288,
+      "gate_escape": false
+    },
+    {
+      "draw": 2,
+      "seed": 1002,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        -9.631177942900273,
+        112.23773251548295,
+        105.77501744610875,
+        75.323696091742,
+        9.62505869398867,
+        -0.7954450485209392
+      ],
+      "finite_difference": [
+        -10.074378829472153,
+        140.45541242069248,
+        123.02486010469237,
+        90.2692826173279,
+        9.620872259574753,
+        -0.7954458311587586
+      ],
+      "relative_error_per_coordinate": [
+        0.0439928748038852,
+        0.20090133529843518,
+        0.14021428387648036,
+        0.16556669214868652,
+        0.00043514083764605835,
+        9.838983230193765e-07
+      ],
+      "max_relative_error_per_coordinate": 0.20090133529843518,
+      "worst_coordinate": "phase_z2",
+      "worst_automatic": 112.23773251548295,
+      "worst_finite_difference": 140.45541242069248,
+      "worst_absolute_difference": 28.217679905209536,
+      "cosine_similarity": 0.9993835299002154,
+      "ad_norm": 172.17826862039985,
+      "fd_norm": 207.8606973244294,
+      "norm_relative_error": 0.17166510631077284,
+      "taylor": [
+        {
+          "h": 0.0001,
+          "observed_delta": 24.638152142033164,
+          "predicted_delta": 2.9645356185118565,
+          "taylor_ratio": 8.310965126605923,
+          "abs_ratio_minus_one": 7.3109651266059235
+        },
+        {
+          "h": 1e-05,
+          "observed_delta": 0.4403840547010134,
+          "predicted_delta": 0.2964535618511857,
+          "taylor_ratio": 1.4855077198299211,
+          "abs_ratio_minus_one": 0.48550771982992114
+        },
+        {
+          "h": 1e-06,
+          "observed_delta": 0.017181966464931975,
+          "predicted_delta": 0.029645356185118564,
+          "taylor_ratio": 0.5795837418056394,
+          "abs_ratio_minus_one": 0.42041625819436057
+        }
+      ],
+      "best_abs_taylor_ratio_minus_one": 0.42041625819436057,
+      "pass_cosine": false,
+      "pass_taylor": false,
+      "pass_norm": false,
+      "pass": false,
+      "min_g": 2.455756437949942e-28,
+      "max_g": 0.9999999999999821,
+      "gate_escape": false
+    },
+    {
+      "draw": 3,
+      "seed": 1003,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        227.5386677157353,
+        -43.75320021442034,
+        -325.5309896440159,
+        -42.99518684820001,
+        1.4627057239589711,
+        -89.86789991146605
+      ],
+      "finite_difference": [
+        227.53215734496732,
+        -43.77498628969078,
+        -325.34835838617937,
+        -42.99543221435442,
+        1.4627057012717157,
+        -89.87128594100112
+      ],
+      "relative_error_per_coordinate": [
+        2.861296989380427e-05,
+        0.0004976832003159713,
+        0.0005613406465071357,
+        5.7067958566700365e-06,
+        1.5510471715489855e-08,
+        3.767643357510003e-05
+      ],
+      "max_relative_error_per_coordinate": 0.0005613406465071357,
+      "worst_coordinate": "excursion_fraction",
+      "worst_automatic": -325.5309896440159,
+      "worst_finite_difference": -325.34835838617937,
+      "worst_absolute_difference": 0.18263125783653322,
+      "cosine_similarity": 0.9999999619671329,
+      "ad_norm": 411.8076955183222,
+      "fd_norm": 411.66282451935865,
+      "norm_relative_error": 0.0003519166422974581,
+      "taylor": [
+        {
+          "h": 0.0001,
+          "observed_delta": 14.097931412010126,
+          "predicted_delta": 16.958557808811115,
+          "taylor_ratio": 0.8313166467896993,
+          "abs_ratio_minus_one": 0.1686833532103007
+        },
+        {
+          "h": 1e-05,
+          "observed_delta": 1.7492465298063564,
+          "predicted_delta": 1.6958557808811117,
+          "taylor_ratio": 1.0314830715719852,
+          "abs_ratio_minus_one": 0.031483071571985155
+        },
+        {
+          "h": 1e-06,
+          "observed_delta": 0.21383854961996462,
+          "predicted_delta": 0.16958557808811114,
+          "taylor_ratio": 1.2609477293455997,
+          "abs_ratio_minus_one": 0.26094772934559973
+        }
+      ],
+      "best_abs_taylor_ratio_minus_one": 0.031483071571985155,
+      "pass_cosine": true,
+      "pass_taylor": true,
+      "pass_norm": true,
+      "pass": true,
+      "min_g": 1.2356804873350273e-37,
+      "max_g": 0.9999999999999981,
+      "gate_escape": false
+    },
+    {
+      "draw": 4,
+      "seed": 1004,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        -170.56648516654263,
+        65.30183594228346,
+        351.93896963252394,
+        29.879704651704195,
+        10.234459977964153,
+        -99.68351343717372
+      ],
+      "finite_difference": [
+        -169.81218381033614,
+        62.904377442407615,
+        350.01807450925065,
+        29.936493075410905,
+        10.23667770141401,
+        -100.64392084530026
+      ],
+      "relative_error_per_coordinate": [
+        0.0044419742993764165,
+        0.038112745048162186,
+        0.00548798837307619,
+        0.0018969631333789858,
+        0.00021664484460129493,
+        0.009542627116075737
+      ],
+      "max_relative_error_per_coordinate": 0.038112745048162186,
+      "worst_coordinate": "phase_z2",
+      "worst_automatic": 65.30183594228346,
+      "worst_finite_difference": 62.904377442407615,
+      "worst_absolute_difference": 2.397458499875846,
+      "cosine_similarity": 0.9999804880925889,
+      "ad_norm": 410.06418736314527,
+      "fd_norm": 407.9656516744362,
+      "norm_relative_error": 0.005143902875391481,
+      "taylor": [
+        {
+          "h": 0.0001,
+          "observed_delta": 1.4459169695585672,
+          "predicted_delta": 16.815263775779673,
+          "taylor_ratio": 0.08598836086301741,
+          "abs_ratio_minus_one": 0.9140116391369826
+        },
+        {
+          "h": 1e-05,
+          "observed_delta": 0.603231648767661,
+          "predicted_delta": 1.6815263775779672,
+          "taylor_ratio": 0.3587405210000585,
+          "abs_ratio_minus_one": 0.6412594789999415
+        },
+        {
+          "h": 1e-06,
+          "observed_delta": 0.1326784716404461,
+          "predicted_delta": 0.1681526377577967,
+          "taylor_ratio": 0.7890359224192082,
+          "abs_ratio_minus_one": 0.21096407758079183
+        }
+      ],
+      "best_abs_taylor_ratio_minus_one": 0.21096407758079183,
+      "pass_cosine": true,
+      "pass_taylor": false,
+      "pass_norm": false,
+      "pass": false,
+      "min_g": 5.727538136613367e-32,
+      "max_g": 0.9999999999999916,
+      "gate_escape": false
+    }
+  ],
+  "min_cosine_across_draws": 0.9830391787710803,
+  "max_best_abs_taylor_ratio_minus_one": 0.9912867310559589,
+  "max_norm_relative_error": 0.46162967078590245,
+  "all_draws_pass": false,
+  "gate_escape_draws": [],
+  "ad_fd": [
+    {
+      "draw": 0,
+      "seed": 1000,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        2428.0835865078147,
+        -1485.72234097378,
+        -3661.7891214314936,
+        -499.920789796061,
+        -529.4004273635661,
+        -503.20869348158453
+      ],
+      "finite_difference": [
+        3693.7182562098765,
+        -1566.3748962623456,
+        -3759.960504166315,
+        -514.8278540644924,
+        -547.3550573981356,
+        -517.9940588192267
+      ],
+      "relative_error_per_coordinate": [
+        0.3426451564285602,
+        0.0514899437427254,
+        0.026109684563452213,
+        0.028955434619052253,
+        0.03280252880080662,
+        0.028543503706095666
+      ],
+      "max_relative_error_per_coordinate": 0.3426451564285602,
+      "worst_coordinate": "phase_z1",
+      "worst_automatic": 2428.0835865078147,
+      "worst_finite_difference": 3693.7182562098765,
+      "worst_absolute_difference": 1265.6346697020617,
+      "cosine_similarity": 0.9830391787710803,
+      "ad_norm": 4721.765024345216,
+      "fd_norm": 5573.809378507807,
+      "norm_relative_error": 0.15286571468482765,
+      "taylor": [
+        {
+          "h": 0.0001,
+          "observed_delta": 19.426289699177914,
+          "predicted_delta": 2229.506494512978,
+          "taylor_ratio": 0.00871326894404112,
+          "abs_ratio_minus_one": 0.9912867310559589
+        },
+        {
+          "h": 1e-05,
+          "observed_delta": -0.15099613546942692,
+          "predicted_delta": 222.9506494512978,
+          "taylor_ratio": -0.0006772625952920181,
+          "abs_ratio_minus_one": 1.000677262595292
+        },
+        {
+          "h": 1e-06,
+          "observed_delta": -0.8870424377740278,
+          "predicted_delta": 22.295064945129777,
+          "taylor_ratio": -0.03978649265912082,
+          "abs_ratio_minus_one": 1.039786492659121
+        }
+      ],
+      "best_abs_taylor_ratio_minus_one": 0.9912867310559589,
+      "pass_cosine": false,
+      "pass_taylor": false,
+      "pass_norm": false,
+      "pass": false,
+      "min_g": 4.123115748683174e-36,
+      "max_g": 0.9999999999999983,
+      "gate_escape": false
+    },
+    {
+      "draw": 1,
+      "seed": 1001,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        -289.51589989343074,
+        63.26811372530632,
+        460.45993871397303,
+        68.72132074812004,
+        -64.16435054022583,
+        -19.760659842795178
+      ],
+      "finite_difference": [
+        -419.12853317853654,
+        64.28341848447872,
+        936.4375017128167,
+        70.42836114692363,
+        -65.487232133421,
+        -19.810512603868347
+      ],
+      "relative_error_per_coordinate": [
+        0.30924316295568116,
+        0.0157941936366925,
+        0.508285456454108,
+        0.024237968497413546,
+        0.02020060323361953,
+        0.0025164801168968175
+      ],
+      "max_relative_error_per_coordinate": 0.508285456454108,
+      "worst_coordinate": "excursion_fraction",
+      "worst_automatic": 460.45993871397303,
+      "worst_finite_difference": 936.4375017128167,
+      "worst_absolute_difference": 475.97756299884367,
+      "cosine_similarity": 0.9859632052475834,
+      "ad_norm": 555.9458904866325,
+      "fd_norm": 1032.6458579138107,
+      "norm_relative_error": 0.46162967078590245,
+      "taylor": [
+        {
+          "h": 0.0001,
+          "observed_delta": 24.867663575972045,
+          "predicted_delta": 30.907583314897476,
+          "taylor_ratio": 0.8045813004081045,
+          "abs_ratio_minus_one": 0.1954186995918955
+        },
+        {
+          "h": 1e-05,
+          "observed_delta": 3.332386916827403,
+          "predicted_delta": 3.0907583314897478,
+          "taylor_ratio": 1.0781777672087323,
+          "abs_ratio_minus_one": 0.07817776720873226
+        },
+        {
+          "h": 1e-06,
+          "observed_delta": 0.13495619091345645,
+          "predicted_delta": 0.30907583314897474,
+          "taylor_ratio": 0.4366442679729265,
+          "abs_ratio_minus_one": 0.5633557320270735
+        }
+      ],
+      "best_abs_taylor_ratio_minus_one": 0.07817776720873226,
+      "pass_cosine": false,
+      "pass_taylor": false,
+      "pass_norm": false,
+      "pass": false,
+      "min_g": 1.3102138564399974e-32,
+      "max_g": 0.9999999999933288,
+      "gate_escape": false
+    },
+    {
+      "draw": 2,
+      "seed": 1002,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        -9.631177942900273,
+        112.23773251548295,
+        105.77501744610875,
+        75.323696091742,
+        9.62505869398867,
+        -0.7954450485209392
+      ],
+      "finite_difference": [
+        -10.074378829472153,
+        140.45541242069248,
+        123.02486010469237,
+        90.2692826173279,
+        9.620872259574753,
+        -0.7954458311587586
+      ],
+      "relative_error_per_coordinate": [
+        0.0439928748038852,
+        0.20090133529843518,
+        0.14021428387648036,
+        0.16556669214868652,
+        0.00043514083764605835,
+        9.838983230193765e-07
+      ],
+      "max_relative_error_per_coordinate": 0.20090133529843518,
+      "worst_coordinate": "phase_z2",
+      "worst_automatic": 112.23773251548295,
+      "worst_finite_difference": 140.45541242069248,
+      "worst_absolute_difference": 28.217679905209536,
+      "cosine_similarity": 0.9993835299002154,
+      "ad_norm": 172.17826862039985,
+      "fd_norm": 207.8606973244294,
+      "norm_relative_error": 0.17166510631077284,
+      "taylor": [
+        {
+          "h": 0.0001,
+          "observed_delta": 24.638152142033164,
+          "predicted_delta": 2.9645356185118565,
+          "taylor_ratio": 8.310965126605923,
+          "abs_ratio_minus_one": 7.3109651266059235
+        },
+        {
+          "h": 1e-05,
+          "observed_delta": 0.4403840547010134,
+          "predicted_delta": 0.2964535618511857,
+          "taylor_ratio": 1.4855077198299211,
+          "abs_ratio_minus_one": 0.48550771982992114
+        },
+        {
+          "h": 1e-06,
+          "observed_delta": 0.017181966464931975,
+          "predicted_delta": 0.029645356185118564,
+          "taylor_ratio": 0.5795837418056394,
+          "abs_ratio_minus_one": 0.42041625819436057
+        }
+      ],
+      "best_abs_taylor_ratio_minus_one": 0.42041625819436057,
+      "pass_cosine": false,
+      "pass_taylor": false,
+      "pass_norm": false,
+      "pass": false,
+      "min_g": 2.455756437949942e-28,
+      "max_g": 0.9999999999999821,
+      "gate_escape": false
+    },
+    {
+      "draw": 3,
+      "seed": 1003,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        227.5386677157353,
+        -43.75320021442034,
+        -325.5309896440159,
+        -42.99518684820001,
+        1.4627057239589711,
+        -89.86789991146605
+      ],
+      "finite_difference": [
+        227.53215734496732,
+        -43.77498628969078,
+        -325.34835838617937,
+        -42.99543221435442,
+        1.4627057012717157,
+        -89.87128594100112
+      ],
+      "relative_error_per_coordinate": [
+        2.861296989380427e-05,
+        0.0004976832003159713,
+        0.0005613406465071357,
+        5.7067958566700365e-06,
+        1.5510471715489855e-08,
+        3.767643357510003e-05
+      ],
+      "max_relative_error_per_coordinate": 0.0005613406465071357,
+      "worst_coordinate": "excursion_fraction",
+      "worst_automatic": -325.5309896440159,
+      "worst_finite_difference": -325.34835838617937,
+      "worst_absolute_difference": 0.18263125783653322,
+      "cosine_similarity": 0.9999999619671329,
+      "ad_norm": 411.8076955183222,
+      "fd_norm": 411.66282451935865,
+      "norm_relative_error": 0.0003519166422974581,
+      "taylor": [
+        {
+          "h": 0.0001,
+          "observed_delta": 14.097931412010126,
+          "predicted_delta": 16.958557808811115,
+          "taylor_ratio": 0.8313166467896993,
+          "abs_ratio_minus_one": 0.1686833532103007
+        },
+        {
+          "h": 1e-05,
+          "observed_delta": 1.7492465298063564,
+          "predicted_delta": 1.6958557808811117,
+          "taylor_ratio": 1.0314830715719852,
+          "abs_ratio_minus_one": 0.031483071571985155
+        },
+        {
+          "h": 1e-06,
+          "observed_delta": 0.21383854961996462,
+          "predicted_delta": 0.16958557808811114,
+          "taylor_ratio": 1.2609477293455997,
+          "abs_ratio_minus_one": 0.26094772934559973
+        }
+      ],
+      "best_abs_taylor_ratio_minus_one": 0.031483071571985155,
+      "pass_cosine": true,
+      "pass_taylor": true,
+      "pass_norm": true,
+      "pass": true,
+      "min_g": 1.2356804873350273e-37,
+      "max_g": 0.9999999999999981,
+      "gate_escape": false
+    },
+    {
+      "draw": 4,
+      "seed": 1004,
+      "names": [
+        "phase_z1",
+        "phase_z2",
+        "excursion_fraction",
+        "amplitude_fraction",
+        "chi_sleep",
+        "chi_wake"
+      ],
+      "automatic": [
+        -170.56648516654263,
+        65.30183594228346,
+        351.93896963252394,
+        29.879704651704195,
+        10.234459977964153,
+        -99.68351343717372
+      ],
+      "finite_difference": [
+        -169.81218381033614,
+        62.904377442407615,
+        350.01807450925065,
+        29.936493075410905,
+        10.23667770141401,
+        -100.64392084530026
+      ],
+      "relative_error_per_coordinate": [
+        0.0044419742993764165,
+        0.038112745048162186,
+        0.00548798837307619,
+        0.0018969631333789858,
+        0.00021664484460129493,
+        0.009542627116075737
+      ],
+      "max_relative_error_per_coordinate": 0.038112745048162186,
+      "worst_coordinate": "phase_z2",
+      "worst_automatic": 65.30183594228346,
+      "worst_finite_difference": 62.904377442407615,
+      "worst_absolute_difference": 2.397458499875846,
+      "cosine_similarity": 0.9999804880925889,
+      "ad_norm": 410.06418736314527,
+      "fd_norm": 407.9656516744362,
+      "norm_relative_error": 0.005143902875391481,
+      "taylor": [
+        {
+          "h": 0.0001,
+          "observed_delta": 1.4459169695585672,
+          "predicted_delta": 16.815263775779673,
+          "taylor_ratio": 0.08598836086301741,
+          "abs_ratio_minus_one": 0.9140116391369826
+        },
+        {
+          "h": 1e-05,
+          "observed_delta": 0.603231648767661,
+          "predicted_delta": 1.6815263775779672,
+          "taylor_ratio": 0.3587405210000585,
+          "abs_ratio_minus_one": 0.6412594789999415
+        },
+        {
+          "h": 1e-06,
+          "observed_delta": 0.1326784716404461,
+          "predicted_delta": 0.1681526377577967,
+          "taylor_ratio": 0.7890359224192082,
+          "abs_ratio_minus_one": 0.21096407758079183
+        }
+      ],
+      "best_abs_taylor_ratio_minus_one": 0.21096407758079183,
+      "pass_cosine": true,
+      "pass_taylor": false,
+      "pass_norm": false,
+      "pass": false,
+      "min_g": 5.727538136613367e-32,
+      "max_g": 0.9999999999999916,
+      "gate_escape": false
+    }
+  ],
+  "max_relative_error_across_draws": 0.508285456454108
+}

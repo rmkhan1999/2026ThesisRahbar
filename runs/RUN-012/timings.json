@@ -1,0 +1,21 @@
+{
+  "compile_seconds": 8.335532458033413,
+  "compile_seconds_by_chain": [
+    8.335532458033413
+  ],
+  "data_generation_seconds": 0.9678705828264356,
+  "gradient_compile_seconds": 2.590103749651462,
+  "gradient_max_seconds": 0.9649315001443028,
+  "gradient_mean_seconds": 0.9606456497684122,
+  "gradient_median_seconds": 0.9603465625550598,
+  "gradient_min_seconds": 0.9566120412200689,
+  "gradient_repeats": 10.0,
+  "sampling_seconds": 11200.51899875002,
+  "sampling_seconds_by_chain": [
+    11200.51899875002
+  ],
+  "warmup_seconds": 22192.346029709093,
+  "warmup_seconds_by_chain": [
+    22192.346029709093
+  ]
+}

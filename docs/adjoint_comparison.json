@@ -1,0 +1,63 @@
+{
+  "date": "2026-08-02",
+  "n_repeats": 10,
+  "seed": 20260802,
+  "gate": {
+    "p0": 0.5,
+    "tau_gate": 0.15,
+    "k": 650.0,
+    "fixed_step_size": 0.003,
+    "burn_in_hours": 48.0,
+    "retained_hours": 24.0
+  },
+  "direct": {
+    "adjoint_mode": "direct",
+    "compile_seconds": 2.893955749925226,
+    "median_seconds": 0.9207638334482908,
+    "mean_seconds": 0.9215723082888871,
+    "min_seconds": 0.9155394998379052,
+    "max_seconds": 0.9354646252468228,
+    "repeats": [
+      0.9216930000111461,
+      0.9178280420601368,
+      0.9239572081714869,
+      0.9207016248255968,
+      0.9155394998379052,
+      0.9229936669580638,
+      0.9189112079329789,
+      0.9178081657737494,
+      0.9354646252468228,
+      0.9208260420709848
+    ],
+    "potential": 145.80561607451435,
+    "grad_norm": 73.73777683299427
+  },
+  "recursive_checkpoint": {
+    "adjoint_mode": "recursive_checkpoint",
+    "checkpoints": 180,
+    "compile_seconds": 1.9608855000697076,
+    "median_seconds": 0.4890412916429341,
+    "mean_seconds": 0.4892063165083528,
+    "min_seconds": 0.47993183322250843,
+    "max_seconds": 0.5080825411714613,
+    "repeats": [
+      0.48657045839354396,
+      0.489846833050251,
+      0.4808774581179023,
+      0.47993183322250843,
+      0.49166029086336493,
+      0.4929019999690354,
+      0.48823575023561716,
+      0.48254770785570145,
+      0.4914082922041416,
+      0.5080825411714613
+    ],
+    "potential": 145.80561607451435,
+    "grad_norm": 73.73777683298687
+  },
+  "speedup_direct_over_recursive": 1.8827936396842586,
+  "recursive_faster": true,
+  "gradient_audit_path": "/Users/rahbarmkhan/Documents/2026ThesisRahbar/docs/unconstrained_gradient_audit_recursive64.json",
+  "gradient_audit_passed": true,
+  "recommendation": "adopt_recursive_after_audit"
+}
